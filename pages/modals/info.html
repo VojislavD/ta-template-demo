@@ -17,7 +17,12 @@
     </head>
     <body>
         <div 
-            x-data="{ menuOpen: false }" 
+            x-data="{ 
+                menuOpen: false, 
+                basicInfoModal: false, 
+                wideInfoModal: false,
+                ultraWideInfoModal: false,
+            }" 
             class="flex min-h-screen custom-scrollbar"
         >
             <!-- start::Black overlay -->
@@ -297,7 +302,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./input.html"
+                                    href="./../formElements/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -309,7 +314,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./checkbox.html"
+                                    href="./../formElements/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -321,7 +326,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./radio.html"
+                                    href="./../formElements/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -333,7 +338,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./switch.html"
+                                    href="./../formElements/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -345,7 +350,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./switch.html"
+                                    href="./../formElements/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -357,7 +362,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./select.html"
+                                    href="./../formElements/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -375,11 +380,11 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../formLayouts.html"
+                        href="./../formLayouts.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                         <span 
                             class="ml-3 transition duration-200" 
@@ -395,11 +400,11 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../buttons.html"
+                        href="./../buttons.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                         </svg>
                         <span 
                             class="ml-3 transition duration-200" 
@@ -409,13 +414,13 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-                    
+
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../tables.html"
+                        href="./../tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -458,7 +463,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/bar_charts.html"
+                                    href="./../charts/bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -470,7 +475,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/line_charts.html"
+                                    href="./../charts/line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -482,7 +487,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/other_charts.html"
+                                    href="./../charts/other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -522,7 +527,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/info.html"
+                                    href="./info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -534,7 +539,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/confirmation.html"
+                                    href="./confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -546,7 +551,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/authentication.html"
+                                    href="./authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1500,7 +1505,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAyADIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7dsvD/nBS4UnH41qR+GYRlnIHGenP0rweH9tf4X2kQZ/E9kRjosyk/wA6h8TftxfDybwhrD6Jrdvf6ulnLJbWkUg3SSKhIH5j9K8WOMSWif3M6/qrk7afecd+0p+2Tovwa1aXRdC05fEGpQHbcyNLshhb+5kAlmHfGAPzFeLWv/BSiay8VR2mt+F7L+zJCvy28jrNHnH8ZypPPoPwrm/Afw2fUtLl8ceOfs8cVy7SWz37KiHJzuUMeh9TyepNO+I3wt8N+MfD9zPaRWc3mx7kurMqcEDqGXrTo432jO2pl6hHR6n3P4J8UeHvip4TtvEGgzC5sLjIO4bXicfeRx2YZ/qMgg1X1zw1DIGJQYr4C/Zb/aKT4B2mtJqSz3+kTwRebbxDLJPG5TzACe69foPSvcrj/goR4B1BHKxXkbYz80LdfTgV1SrT+yrnmexhF2k0j1V/CcG9v3Xf0FFeCH9vLwexJ8i4Gef9WaKy9tV/lZfsqP8AMj897O8KsBng177+ytpcFx4wl1K+uoLK0t7eXfdXJxGm5di556Fm5zx68E185QKd2Tzz0r6D+GdjDpPwb8S3N4fKfVYhZxLn+Etwf++mH5/SrzKSWHce+n3k5XT/ANqjJfZ1+4+2/wBoDwJZ+PPCNhbaVr0ulWEFunlR28myPGwYPHUY56183+P/AIY3vwv+DcE2ias899ql4We8hYqfL2knHqeMbq9I+FeqXHxY+DvhCe0liF7Z20drfQ3ALqRAPLJKggkNtB4PevCvjh4wv7PUpRfadBafZw6x+WssCLxjiNshicDnNeFgnKL9k18L1PscTGEqbq3smjxdriWGEQTzMxl3mVtxJJwWOTXOtdIryLANqjr6mtPT7gardWyyYSSZ/L3N6ujDP8quWHg650+8maaNXi2kZbp9a+lUlFa7nw9WLlK62OUa6+Y/u+9FdN5c68CO3I9cdaKfOuxhys5zw9pt3rmpQWVhZz6hezHbFb26GR3PoFHJr6M1T4X+MrzQfCfhmKwW3OoFJYplmSQSv+9bZ8hOGX7O3HbbzWjpeh2fwf0BxZLEdY8I+ILG/wBTv4VxJeWE8KAMG67A0j4Xp3NdL4U8THwR4k0rTbiQ/Z/DPjNbvfy2zT50lcPx2H2lyT2ANdFTBxxCi5PbU0o4p4WUuVb6E/wJuB4b+EtjNbT4fy5N7AkMjEkkH0INfPXxBuNa+JXjJIdR1Oa4tYpGLSTHIjiHJPvxmvUmgfw6t/bWrSf2Tq1zdzabcL/qrmAzFo5F7jKSRnBAPNcX8RdCl0vQRJYxM3mj/S2/iC/4Z5NeF7B4atK27Ppo1VicPG+y3XoeT6pcLHeSy2ZKxw3CtEf90HBr0zUrqT7KrTbSkirIjL/ErKCP0Iryy9Agt4rc/wCtb52B6g+n9fxrv/CPnSeEY7VGE8d5JlWkYloZIQw2D0DeauPevS9kpwXkeE52k13Mz7Oi8edjHbNFUGtyzE7j+dFRy+ZhzPse4a+7SSXAZiwm+F6PLk53soG0t6kYGM9MVoaeS3xe0HJz5un2Ykz/AB50+9zn16D8qKK96nscNTcztJUSeB/hi7gO4sL1QzckAXTADPoBxXUMimWMbR0Pb2oorwcZ/FXyPpcv/wB3fzPj7VGLaheknJ85ufxaut+E/wC88VW8TfNEbiHKHleZEzx+A/Kiiu+OyPIluyzffLe3AHAEjYH4miiiuYk//9k="
+                                                    src="./img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1793,181 +1798,129 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Default Checkbox -->
+                    <p class="text-sm">*Click on modal to open it</p>
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Default Checkbox</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
+                        <!-- start:: Info Modals -->
+                        <div>
+                            <h4 class="text-xl capitalize">Info Modals</h4>
+                            <div class="mt-6 flex flex-col space-y-16">
+                                <!-- start:: Basic Info Modal -->
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="basicInfoModal = !basicInfoModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                        >
+                                        Basic Info Modal
+                                    </button>
+                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../assets/basic_info_modal.bb0b75ae.png" alt="basic_info_modal">
+                                </div>
+                                <!-- end:: Basic Info Modal -->
 
-                            <!-- start::Checkbox Unchecked -->
-                            <div class="flex items-center">
-                                <label for="checkbox_unchecked">Unchecked</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_unchecked" 
-                                    id="checkbox_unchecked" 
-                                    class="ml-2 focus:ring-0" 
-                                >
+                                <!-- start:: Wide Info Modal -->
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="wideInfoModal = !wideInfoModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                    >
+                                        Wide Info Modal
+                                    </button>
+                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../assets/wide_info_modal.786219e5.png" alt="wide_info_modal">
+                                </div>
+                                <!-- end:: Wide Info Modal -->
+
+                                <!-- start:: Ultra Wide Info Modal -->
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="ultraWideInfoModal = !ultraWideInfoModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                    >
+                                    Ultra Wide Info Modals
+                                    </button>
+                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../assets/ultra_wide_info_modal.8852686a.png" alt="ultra_wide_info_modal">
+                                </div>
+                                <!-- end:: Ultra Wide Info Modal -->
                             </div>
-                            <!-- end::Checkbox Unchecked -->
-
-                            <!-- start::Checkbox Checked -->
-                            <div class="flex items-center">
-                                <label for="checkbox_checked">Checked</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_checked" 
-                                    id="checkbox_checked" 
-                                    class="ml-2 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Checked -->
-
-                            <!-- start::Checkbox Unchecked Disabled -->
-                            <div class="flex items-center">
-                                <label for="checkbox_unchecked_disabled" class="text-gray-500">Unchecked Disabled</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_unchecked_disabled" 
-                                    id="checkbox_unchecked_disabled" 
-                                    class="ml-2 text-gray-300 focus:ring-0"
-                                    disabled
-                                >
-                            </div>
-                            <!-- end::Checkbox Unchecked Disabled -->
-
-                            <!-- start::Checkbox Checked Disabled -->
-                            <div class="flex items-center">
-                                <label for="checkbox_checked_disabled" class="text-gray-500">Checked Disabled</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_checked_disabled" 
-                                    id="checkbox_checked_disabled" 
-                                    class="ml-2 text-gray-500 focus:ring-0"
-                                    checked
-                                    disabled
-                                >
-                            </div>
-                            <!-- end::Checkbox Checked Disabled -->
-
-                            <!-- start::Checkbox Rounded -->
-                            <div class="flex items-center">
-                                <label for="checkbox_rounded">Rounded</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_rounded" 
-                                    id="checkbox_rounded" 
-                                    class="ml-2 focus:ring-0 rounded-full"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Input Checkbox Rounded -->
-
-                            <!-- start::Checkbox Label Right -->
-                            <div class="flex items-center">
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_label_right" 
-                                    id="checkbox_label_right" 
-                                    class="mr-2 focus:ring-0"
-                                    checked
-                                >
-                                <label for="checkbox_label_right">Label Right</label>
-                            </div>
-                            <!-- end::Checkbox Label Right-->
-
-                            
                         </div>
+                        <!-- end:: Info Modals -->
                     </div>
-                    <!-- end::Default Checkbox -->
-
-                    <!-- start::Color Checkbox -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Color Checkbox</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
-                            <!-- start::Checkbox Color Primary -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_primary">Color Primary</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_primary" 
-                                    id="checkbox_color_primary" 
-                                    class="ml-2 text-primary border border-primary focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Primary -->
-
-                            <!-- start::Checkbox Color Secondary -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_secondary">Color Secondary</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_secondary" 
-                                    id="checkbox_color_secondary" 
-                                    class="ml-2 text-secondary border border-secondary focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Secondary -->
-
-                            <!-- start::Checkbox Color Red -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_red">Color Red</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_red" 
-                                    id="checkbox_color_red" 
-                                    class="ml-2 text-red-600 border border-red-600 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Red -->
-
-                            <!-- start::Checkbox Color Green -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_green">Color Green</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_green" 
-                                    id="checkbox_color_green" 
-                                    class="ml-2 text-green-500 border border-green-500 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Green -->
-
-                            <!-- start::Checkbox Color Blue -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_blue">Color Blue</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_blue" 
-                                    id="checkbox_color_blue" 
-                                    class="ml-2 text-blue-500 border border-blue-500 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Blue -->
-
-                            <!-- start::Checkbox Color Yellow -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_yellow">Color Yellow</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_yellow" 
-                                    id="checkbox_color_yellow" 
-                                    class="ml-2 text-yellow-500 border border-yellow-500 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Yellow -->
-                        </div>
-                    </div>
-                    <!-- end::Color Checkbox -->
                 </div>
                 <!-- end:Page content -->
             </div>
+            
+            <!-- start:: Basic Info Modal -->
+            <div 
+                x-show="basicInfoModal" 
+                x-transition.opacity
+                x-transition:enter.duration.100ms
+                x-transition:leave.duration.300ms
+                x-cloak
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
+            >
+                <div 
+                    @click.away="basicInfoModal = false" 
+                    class="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 bg-white p-10 rounded-lg shadow-xl"
+                >
+                    <span 
+                        @click="basicInfoModal = false"
+                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
+                        title="Close"
+                    >
+                        &#x2715
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
+                </div>
+            </div>
+            <!-- end:: Basic Info Modal -->
+
+            <!-- start:: Wide Info Modal -->
+            <div 
+                x-show="wideInfoModal" 
+                x-transition.opacity
+                x-transition:enter.duration.100ms
+                x-transition:leave.duration.300ms
+                x-cloak
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
+            >
+                <div 
+                    @click.away="wideInfoModal = false" 
+                    class="relative w-5/6 md:w-3/4 lg:w-2/3 xl:w-1/2 bg-white p-10 rounded-lg shadow-xl"
+                >
+                    <span 
+                        @click="wideInfoModal = false"
+                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
+                        title="Close"
+                    >
+                        &#x2715
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
+                </div>
+            </div>
+            <!-- end:: Wide Info Modal -->
+
+            <!-- start:: Ultra Wide Info Modal -->
+            <div 
+                x-show="ultraWideInfoModal" 
+                x-transition.opacity
+                x-transition:enter.duration.100ms
+                x-transition:leave.duration.300ms
+                x-cloak
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
+            >
+                <div 
+                    @click.away="ultraWideInfoModal = false" 
+                    class="relative w-11/12 md:w-5/6 lg:w-3/4 xl:w-2/3 bg-white p-10 rounded-lg shadow-xl"
+                >
+                    <span 
+                        @click="ultraWideInfoModal = false"
+                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
+                        title="Close"
+                    >
+                        &#x2715
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
+                </div>
+            </div>
+            <!-- end:: Ultra Wide Info Modal -->
         </div>
     </body>
 </html>
