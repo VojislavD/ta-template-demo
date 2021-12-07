@@ -13,11 +13,17 @@
         <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.4.2/dist/cdn.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-      <link rel="stylesheet" href="./../../assets/tailwind.a0b6cdd1.css">
+      <link rel="stylesheet" href="./../assets/tailwind.a0b6cdd1.css">
     </head>
     <body>
         <div 
-            x-data="{ menuOpen: false }" 
+            x-data="{ 
+                menuOpen: false, 
+                basicSignInModal: false,
+                basicSignUpModal: false,
+                advanceSignInModal: false,
+                advanceSignUpModal: false,
+            }" 
             class="flex min-h-screen custom-scrollbar"
         >
             <!-- start::Black overlay -->
@@ -43,7 +49,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../../index.html"
+                        href="./../index.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -297,7 +303,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/input.html"
+                                    href="./formElements/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -309,7 +315,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/checkbox.html"
+                                    href="./formElements/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -321,7 +327,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/radio.html"
+                                    href="./formElements/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -333,7 +339,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/textarea.html"
+                                    href="./formElements/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -345,7 +351,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/switch.html"
+                                    href="./formElements/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -357,7 +363,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/select.html"
+                                    href="./formElements/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -375,7 +381,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../formLayouts.html"
+                        href="./formLayouts.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -395,7 +401,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../buttons.html"
+                        href="./buttons.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -409,13 +415,13 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-                    
+
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../tables.html"
+                        href="./tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -458,7 +464,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./bar_charts.html"
+                                    href="./charts/bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -470,7 +476,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./line_charts.html"
+                                    href="./charts/line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -482,7 +488,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./other_charts.html"
+                                    href="./charts/other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -522,7 +528,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/info.html"
+                                    href="./info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -534,7 +540,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/confirmation.html"
+                                    href="./confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -546,7 +552,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/authentication.html"
+                                    href="./authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -564,7 +570,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../maps.html"
+                        href="./maps.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1456,7 +1462,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="data:image/jpeg;base64,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"
+                                                    src="./img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1749,324 +1755,31 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-
-                    <!-- start::Vertical Bar Chart -->
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Vertical Bar Chart</h4>
-                        <div class="mt-6">
-                            <canvas id="verticalBarChart"></canvas>
+                        <!-- start:: Full Width Map -->
+                        <div>
+                            <h4 class="text-xl capitalize">Full Width Map</h4>
+                            <div class="mt-6 flex flex-col space-y-16">
+                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194152504!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2srs!4v1638880287768!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
+                        <!-- end:: Full Width Map -->
                     </div>
-                    <!-- end::Vertical Bar Chart -->
 
-                    <!-- start::Horizontal Bar Chart -->
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Horizontal Bar Chart</h4>
-                        <div class="mt-6">
-                            <canvas id="horizontalBarChart"></canvas>
+                        <!-- start:: Two Maps In A Row -->
+                        <div>
+                            <h4 class="text-xl capitalize">Two Maps In A Row</h4>
+                            <div class="mt-6 grid grid-cols-2 gap-8">
+                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194152504!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2srs!4v1638880287768!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194152504!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2srs!4v1638880287768!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
                         </div>
+                        <!-- end:: Two Maps In A Row -->
                     </div>
-                    <!-- end::Horizontal Bar Chart -->
-
-                    <!-- start::Stacked Bar Chart -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Stacked Bar Chart</h4>
-                        <div class="mt-6">
-                            <canvas id="stackedBarChart"></canvas>
-                        </div>
-                    </div>
-                    <!-- end::Stacked Bar Chart -->
-
-                    <!-- start::Stacked Bar Chart With Groups -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Stacked Bar Chart With Groups</h4>
-                        <div class="mt-6">
-                            <canvas id="stackedBarChartGroup"></canvas>
-                        </div>
-                    </div>
-                    <!-- end::Stacked Bar Chart With Groups -->
-
-                    <!-- start::Bar Chart Border Radius -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Bar Chart Border Radius</h4>
-                        <div class="mt-6">
-                            <canvas id="barChartBorderRadius"></canvas>
-                        </div>
-                    </div>
-                    <!-- end::Bar Chart Border Radius -->
-                    
                 </div>
                 <!-- end:Page content -->
             </div>
         </div>
-
-        <!-- Chart Scripts -->
-        <script>
-            // start::Vertical Bar Chart
-            const DATA_SET_VERTICAL_BAR_CHART_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
-
-            const DATA_SET_VERTICAL_BAR_CHART_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
-
-            const labels_vertical_bar_chart = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
-
-            const dataVerticalBarChart= {
-                labels: labels_vertical_bar_chart,
-                datasets: [
-                    {
-                        label: 'Dataset 1',
-                        data: DATA_SET_VERTICAL_BAR_CHART_1,
-                        borderColor: 'rgb(255, 99, 132)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                    },
-                    {
-                        label: 'Dataset 2',
-                        data: DATA_SET_VERTICAL_BAR_CHART_2,
-                        borderColor: 'rgb(54, 162, 235)',
-                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                    }
-                ]
-            };
-            const configVerticalBarChart = {
-                type: 'bar',
-                data: dataVerticalBarChart,
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        },
-                        title: {
-                            display: true,
-                            text: 'Vertical Bar Chart'
-                        }
-                    }
-                },
-            };
-
-            var verticalBarChart = new Chart(
-                document.getElementById('verticalBarChart'),
-                configVerticalBarChart
-            );
-            // end::Vertical Bar Chart 
-
-            // start::Horizontal Bar Chart
-            const DATA_SET_HORIZONTAL_BAR_CHART_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
-
-            const DATA_SET_HORIZONTAL_BAR_CHART_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
-
-            const labels_horizontal_bar_chart = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
-
-            const dataHorizontalBarChart= {
-                labels: labels_horizontal_bar_chart,
-                datasets: [
-                    {
-                        label: 'Dataset 1',
-                        data: DATA_SET_HORIZONTAL_BAR_CHART_1,
-                        borderColor: 'rgb(255, 99, 132)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                    },
-                    {
-                        label: 'Dataset 2',
-                        data: DATA_SET_HORIZONTAL_BAR_CHART_2,
-                        borderColor: 'rgb(54, 162, 235)',
-                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                    }
-                ]
-            };
-
-            const configHorizontalBarChart = {
-                type: 'bar',
-                data: dataHorizontalBarChart,
-                options: {
-                    indexAxis: 'y',
-                    // Elements options apply to all of the options unless overridden in a dataset
-                    // In this case, we are setting the border of each horizontal bar to be 2px wide
-                    elements: {
-                        bar: {
-                            borderWidth: 2,
-                         }
-                    },
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'right',
-                        },
-                        title: {
-                            display: true,
-                            text: 'Horizontal Bar Chart'
-                        }
-                    }
-                },
-            };
-
-            var horizontalBarChart = new Chart(
-                document.getElementById('horizontalBarChart'),
-                configHorizontalBarChart
-            );
-            // end::Horizontal Bar Chart
-
-            // start::Stacked Bar Chart
-            const DATA_SET_STACKED_BAR_CHART_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
-
-            const DATA_SET_STACKED_BAR_CHART_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
-
-            const labels_stacked_bar_chart = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
-
-            const dataStackedBarChart= {
-                labels: labels_stacked_bar_chart,
-                datasets: [
-                    {
-                        label: 'Dataset 1',
-                        data: DATA_SET_STACKED_BAR_CHART_1,
-                        borderColor: 'rgb(255, 99, 132)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                    },
-                    {
-                        label: 'Dataset 2',
-                        data: DATA_SET_STACKED_BAR_CHART_2,
-                        borderColor: 'rgb(54, 162, 235)',
-                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                    }
-                ]
-            };
-
-            const configStackedBarChart = {
-                type: 'bar',
-                data: dataStackedBarChart,
-                options: {
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'Stacked Bar Chart'
-                        },
-                    },
-                    responsive: true,
-                    scales: {
-                        x: {
-                            stacked: true,
-                        },
-                        y: {
-                            stacked: true
-                        }
-                    }
-                }
-            };
-
-            var stackedBarChart = new Chart(
-                document.getElementById('stackedBarChart'),
-                configStackedBarChart
-            );
-            // end::Stacked Bar Chart
-
-            // start::Stacked Bar Chart With Groups
-            const DATA_SET_STACKED_BAR_CHART_GROUP_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
-
-            const DATA_SET_STACKED_BAR_CHART_GROUP_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
-
-            const labels_stacked_bar_chart_group = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
-
-            const dataStackedBarChartGroup= {
-                labels: labels_stacked_bar_chart_group,
-                datasets: [
-                    {
-                        label: 'Dataset 1',
-                        data: DATA_SET_STACKED_BAR_CHART_GROUP_1,
-                        borderColor: 'rgb(255, 99, 132)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                    },
-                    {
-                        label: 'Dataset 2',
-                        data: DATA_SET_STACKED_BAR_CHART_GROUP_2,
-                        borderColor: 'rgb(54, 162, 235)',
-                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                    }
-                ]
-            };
-
-            const configStackedBarChartGroup = {
-                type: 'bar',
-                data: dataStackedBarChartGroup,
-                options: {
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'Stacked Bar Chart With Groups'
-                        },
-                    },
-                    responsive: true,
-                    interaction: {
-                        intersect: false,
-                    },
-                    scales: {
-                        x: {
-                            stacked: true,
-                        },
-                        y: {
-                            stacked: true
-                        }
-                    }
-                }
-            };
-
-            var stackedBarChartGroup = new Chart(
-                document.getElementById('stackedBarChartGroup'),
-                configStackedBarChartGroup
-            );
-            // end::Stacked Bar Chart With Groups
-
-            // start::Bar Chart Border Radius
-            const DATA_SET_BAR_CHART_BORDER_RADIUS_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
-
-            const DATA_SET_BAR_CHART_BORDER_RADIUS_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
-
-            const labels_bar_chart_border_radius = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
-
-            const dataBarChartBorderRadius= {
-                labels: labels_bar_chart_border_radius,
-                datasets: [
-                    {
-                        label: 'Full Rounded',
-                        data: DATA_SET_BAR_CHART_BORDER_RADIUS_1,
-                        borderColor: 'rgb(255, 99, 132)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                        borderWidth: 2,
-                        borderRadius: Number.MAX_VALUE,
-                        borderSkipped: false
-                    },
-                    {
-                        label: 'Dataset 2',
-                        data: DATA_SET_BAR_CHART_BORDER_RADIUS_2,
-                        borderColor: 'rgb(54, 162, 235)',
-                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                        borderWidth: 2,
-                        borderRadius: 5,
-                        borderSkipped: false
-                    }
-                ]
-            };
-
-            const configBarChartBorderRadius = {
-                type: 'bar',
-                data: dataBarChartBorderRadius,
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        },
-                        title: {
-                            display: true,
-                            text: 'Bar Chart Border Radius'
-                        }
-                    }
-                },
-            };
-
-            var barChartBorderRadius = new Chart(
-                document.getElementById('barChartBorderRadius'),
-                configBarChartBorderRadius
-            );
-            // end::Bar Chart Border Radius
-        </script>
     </body>
 </html>
