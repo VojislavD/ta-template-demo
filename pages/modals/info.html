@@ -13,7 +13,7 @@
         <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.4.2/dist/cdn.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-      <link rel="stylesheet" href="./../../assets/tailwind.75bfe3c9.css">
+      <link rel="stylesheet" href="./../../assets/tailwind.7e953029.css">
     </head>
     <body>
         <div 
@@ -258,7 +258,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="#"
+                        href="./../messages.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -268,7 +268,7 @@
                             class="ml-3 transition duration-200" 
                             :class="linkHover ? 'text-gray-100' : ''"
                         >
-                            Chat (soon)
+                            Messages
                         </span>
                     </a>
                     <!-- end::Menu link -->

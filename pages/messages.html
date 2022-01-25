@@ -13,11 +13,17 @@
         <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.4.2/dist/cdn.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-      <link rel="stylesheet" href="./../../assets/tailwind.7e953029.css">
+      <link rel="stylesheet" href="./../assets/tailwind.7e953029.css">
     </head>
     <body>
         <div 
-            x-data="{ menuOpen: false }" 
+            x-data="{ 
+                menuOpen: false, 
+                basicSignInModal: false,
+                basicSignUpModal: false,
+                advanceSignInModal: false,
+                advanceSignUpModal: false,
+            }" 
             class="flex min-h-screen custom-scrollbar"
         >
             <!-- start::Black overlay -->
@@ -43,7 +49,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../../index.html"
+                        href="./../index.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -253,7 +259,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../messages.html"
+                        href="./messages.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -297,7 +303,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./input.html"
+                                    href="./formElements/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -309,7 +315,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./checkbox.html"
+                                    href="./formElements/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -321,7 +327,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./radio.html"
+                                    href="./formElements/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -333,7 +339,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./switch.html"
+                                    href="./formElements/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -345,7 +351,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./switch.html"
+                                    href="./formElements/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -357,7 +363,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./select.html"
+                                    href="./formElements/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -375,11 +381,11 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../formLayouts.html"
+                        href="./formLayouts.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                         <span 
                             class="ml-3 transition duration-200" 
@@ -395,11 +401,11 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../buttons.html"
+                        href="./buttons.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                         </svg>
                         <span 
                             class="ml-3 transition duration-200" 
@@ -409,13 +415,13 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-                    
+
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../tables.html"
+                        href="./tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -458,7 +464,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/bar_charts.html"
+                                    href="./charts/bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -470,7 +476,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/line_charts.html"
+                                    href="./charts/line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -482,7 +488,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/other_charts.html"
+                                    href="./charts/other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -522,7 +528,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/info.html"
+                                    href="./modals/info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -534,7 +540,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/confirmation.html"
+                                    href="./modals/confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -546,7 +552,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/authentication.html"
+                                    href="./modals/authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -564,7 +570,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../maps.html"
+                        href="./maps.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -585,7 +591,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../cards.html"
+                        href="./cards.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -599,13 +605,13 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-                    
+
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../tabs.html"
+                        href="./tabs.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -625,7 +631,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../accordions.html"
+                        href="./accordions.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1388,7 +1394,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="data:image/jpeg;base64,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"
+                                                    src="./img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1681,178 +1687,272 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Default Checkbox -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Default Checkbox</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
-
-                            <!-- start::Checkbox Unchecked -->
-                            <div class="flex items-center">
-                                <label for="checkbox_unchecked">Unchecked</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_unchecked" 
-                                    id="checkbox_unchecked" 
-                                    class="ml-2 focus:ring-0" 
+                    <!-- start::Messages -->
+                    <h4 class="text-xl font-semibold mb-4">Messages</h4>
+                    <div 
+                        class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4" 
+                        x-data="{ activeMessage: 0 }"
+                    >
+                        <div class="w-full lg:w-1/2 xl:w-1/3 2xl:w-1/4 bg-white rounded-lg h-full">
+                            <h5 class="flex items-center p-4 space-x-2 border-b-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                                </svg>
+                                <span class="font-semibold">Conversations</span>
+                            </h5>
+                            <div class="my-4">
+                                <button 
+                                    @click="activeMessage = 1"
+                                    class="w-full py-3 flex items-center justify-between px-2 my-2 hover:bg-primary hover:bg-opacity-20 cursor-pointer"
+                                    :class="activeMessage === 1 ? 'bg-primary bg-opacity-20' : '' "
                                 >
-                            </div>
-                            <!-- end::Checkbox Unchecked -->
-
-                            <!-- start::Checkbox Checked -->
-                            <div class="flex items-center">
-                                <label for="checkbox_checked">Checked</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_checked" 
-                                    id="checkbox_checked" 
-                                    class="ml-2 focus:ring-0"
-                                    checked
+                                    <div class="flex items-center">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QBqRXhpZgAASUkqAAgAAAADABIBAwABAAAAAQAAADEBAgARAAAAMgAAAGmHBAABAAAARAAAAAAAAABTaG90d2VsbCAwLjMwLjEwAAACAAKgCQABAAAAMQwAAAOgCQABAAAAMAwAAAAAAAD/4Qn4aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA0LjQuMC1FeGl2MiI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjMxMjEiIGV4aWY6UGl4ZWxZRGltZW5zaW9uPSIzMTIwIiB0aWZmOkltYWdlV2lkdGg9IjMxMjEiIHRpZmY6SW1hZ2VIZWlnaHQ9IjMxMjAiIHRpZmY6T3JpZW50YXRpb249IjEiLz4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUEBAUKBwcGCAwKDAwLCgsLDQ4SEA0OEQ4LCxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJFA0LDRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgAMgAyAwEiAAIRAQMRAf/EAB0AAAEEAwEBAAAAAAAAAAAAAAAEBgcIAwUJAgH/xAA1EAABAwMCBAMGBAcBAAAAAAABAgMEAAURBiEHEhMxQVGBCAkUImFxMlKRsRUjNDVicqLB/8QAGgEAAgMBAQAAAAAAAAAAAAAAAwYCBAUAAf/EACURAAICAQIFBQEAAAAAAAAAAAECAAMRBDESEyEzsQU0QXGBMv/aAAwDAQACEQMRAD8A6AlOAaYXFzWb2j9FXyZBeiM3SPCcfYXPcDbCCAfnWo7cqT39M1IhScGqTe9I1a5YuDtjtDLLa3bzdOn1FfiQltsrPL98pB+1BnTmrxc4p6r4q35y46n1DIvU7HSUVKSpttIWrCG+UkFG+Rj8x9WtamWpcxlhT7MFZSoGVK/CVAEhJONs4xn7U7tO6AuN1ZS/GtTzjeeZT2Plx9T2708n/ZzvFzgJlw3YzyUtKkyEtuArSEjtgd98bVA2Iu5hFosfqol5vYF4cacsESHNm6otWo9TJjgxINmHO1AaLZOXVJSP5gDi0krOylrAyavCy3gYrl/7u/iPetNaqu/Dxi9ll6TFXOtcBbLS40mS0cuMuZSFpyg5CkqBHKdj2rqS01lO3apiDmLp0Up6B+v6UV7OnjpGqJ+8P0DM4lcTuEWn1P8Aw9pkKmBSknB6uWyc/dCcD1q+3w6vMVAPtA8O5etdUacviDiNpQuXANpSMuqWQ0rJ8gkqVj/Gg2krWzLuBD0Kr2qrbEzT8LOGemLNpaPp5Nvgy2GkAORlhC1KP5lDvv5mn3cdLWWDZXER7VFixkt9M8jaUISnfY4GAN6h2RwCMu9HVj+o5H8OYBktW4MMobbUN/xJSFn7lWfrSviHw2uvGEwRGvTlnkwm2nEkNoeCuYAqJSsFB380+vhSoCDgE7xxwwyR8fEhjRnAluxe3bom8WFhSLYYku6SOmcpQG2y2fQqdQPrmujMRvDYyD2qrFi4RybXfLXqy3XNZumkmHIy+k0lpmW0rlckJUhOyQoJIwNgcEdqtawoOtpUg8yVAFJ8wdxTLpCWoUmKmtULqHAnrFFZOkfMUVcxKUA0o+FaW82NEyNcIjpCWpsdTXP+XII/cg04+cBBJISPEnYUwOIfExGlWmW4dqdvEh4KUk84bZSAcEqVuSN+wFQsZEQmw4ELUju4WsdZEOoUTI0NiCG/i4aHTHmttKy40QcBYT2WMjcdx4Z3r68zJbukIQFcoQ2gPTHWygJQkYASMDmUfEEY+tLNMQZN+cfuDykiTIdU+6hA5UKClE7Dwwe1Oe72NHwTrxASoIwlAzjPmcmkcKCpCiPnOCYDbxwaTtbLOg5a2nEyF3RtbwUjcKC0YTjzGMH1qQIUYRYjLI36baW/0GP/ACoe4LTb5C0441eJDdxhxpimYoSyG1oaGFBJUNl8pOBsNsVLUbUVtdXyqkpacPZLvyn9e1Oum4OUvBtiI+p4zc5s3zF/SV5UVnBCgCCCD2Ioq1K0ji9vuuahW2txamwcBClEgbeVNLisSE2gAkAtLyPP5k0UVm6/27/nmaPp3uV/fBmLQP8ATN/6qH/Rrf33+2u+n70UUtV/wZv2d6ZtBgHRUQ43L0gk+Z6iqWLSlTzuQDv4iiimyjsp9CLOo7z/AGfMTdiQNgPAetFFFGlSf//Z" class="rounded-full w-10">
+                                        <span class="ml-3">Annie Baker</span>
+                                        <span class="w-3 h-3 bg-green-600 ml-2 rounded-full" title="Online"></span>
+                                    </div>
+                                    <div class="flex flex-col items-end justify-start">
+                                        <span class="text-sm text-gray-500">10:54PM</span>
+                                        <span class="bg-primary text-gray-100 text-sm px-2 py-0.5 mt-0.5 rounded-full font-semibold">1</span>
+                                    </div>
+                                </button>
+                                <button 
+                                    @click="activeMessage = 2"
+                                    class="w-full py-3 flex items-center justify-between px-2 my-2 hover:bg-primary hover:bg-opacity-20 cursor-pointer"
+                                    :class="activeMessage === 2 ? 'bg-primary bg-opacity-20' : '' "
                                 >
-                            </div>
-                            <!-- end::Checkbox Checked -->
-
-                            <!-- start::Checkbox Unchecked Disabled -->
-                            <div class="flex items-center">
-                                <label for="checkbox_unchecked_disabled" class="text-gray-500">Unchecked Disabled</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_unchecked_disabled" 
-                                    id="checkbox_unchecked_disabled" 
-                                    class="ml-2 text-gray-300 focus:ring-0"
-                                    disabled
+                                    <div class="flex items-center">
+                                        <img src="./../assets/message2.03ad6f04.jpg" class="rounded-full w-10">
+                                        <span class="ml-3">Anthony Ruiz</span>
+                                    </div>
+                                    <div class="flex flex-col items-end justify-start">
+                                        <span class="text-sm text-gray-500">Wed</span>
+                                        <span class="bg-primary text-gray-100 text-sm px-2 py-0.5 mt-0.5 rounded-full font-semibold">2</span>
+                                    </div>
+                                </button>
+                                <button 
+                                    @click="activeMessage = 3"
+                                    class="w-full py-3 flex items-center justify-between px-2 my-2 hover:bg-primary hover:bg-opacity-20 cursor-pointer"
+                                    :class="activeMessage === 3 ? 'bg-primary bg-opacity-20' : '' "
                                 >
-                            </div>
-                            <!-- end::Checkbox Unchecked Disabled -->
+                                    <div class="flex items-center">
+                                        <img src="./../assets/message3.3e8c5ab6.jpg" class="rounded-full w-10">
+                                        <span class="ml-3">Maria Watkins</span>
+                                        <span class="w-3 h-3 bg-yellow-500 ml-2 rounded-full" title="Away"></span>
 
-                            <!-- start::Checkbox Checked Disabled -->
-                            <div class="flex items-center">
-                                <label for="checkbox_checked_disabled" class="text-gray-500">Checked Disabled</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_checked_disabled" 
-                                    id="checkbox_checked_disabled" 
-                                    class="ml-2 text-gray-500 focus:ring-0"
-                                    checked
-                                    disabled
-                                >
+                                    </div>
+                                    <div class="flex flex-col items-end justify-start">
+                                        <span class="text-sm text-gray-500">26 Jan</span>
+                                    </div>
+                                </button>
                             </div>
-                            <!-- end::Checkbox Checked Disabled -->
-
-                            <!-- start::Checkbox Rounded -->
-                            <div class="flex items-center">
-                                <label for="checkbox_rounded">Rounded</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_rounded" 
-                                    id="checkbox_rounded" 
-                                    class="ml-2 focus:ring-0 rounded-full"
-                                    checked
-                                >
+                        </div>
+                        <div class="w-full lg:w-1/2 xl:w-2/3 2xl:w-3/4 bg-white rounded-lg h-full">
+                            <div
+                                class="flex items-center justify-center h-[720px]" 
+                                :class="activeMessage === 0 ? 'block' : 'hidden'"
+                            >
+                                <h5 class="text-2xl text-gray-400">Select Conversation</h5>
                             </div>
-                            <!-- end::Input Checkbox Rounded -->
-
-                            <!-- start::Checkbox Label Right -->
-                            <div class="flex items-center">
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_label_right" 
-                                    id="checkbox_label_right" 
-                                    class="mr-2 focus:ring-0"
-                                    checked
-                                >
-                                <label for="checkbox_label_right">Label Right</label>
+                            <div
+                                class="flex flex-col justify-between h-[720px]" 
+                                :class="activeMessage === 1 ? 'block' : 'hidden'"
+                            >
+                                <h5 class="text-lg p-4 border-b-2 font-semibold">To: Annie Baker</h5>
+                                <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
+                                    <div class="flex flex-col items-end">
+                                        <div class="w-3/4 2xl:w-1/2 flex justify-end  space-x-1">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corporis optio, perferendis soluta quos natus quasi officiis ratione ea, necessitatibus tenetur, vero eligendi quidem quo pariatur repellendus voluptatem enim. Dicta!
+                                                </div>
+                                                <div class="flex mt-0.5">
+                                                    <span class="text-gray-400 text-sm">08:04 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="data:image/jpeg;base64,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" class="w-12 h-12 rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
+                                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QBqRXhpZgAASUkqAAgAAAADABIBAwABAAAAAQAAADEBAgARAAAAMgAAAGmHBAABAAAARAAAAAAAAABTaG90d2VsbCAwLjMwLjEwAAACAAKgCQABAAAAMQwAAAOgCQABAAAAMAwAAAAAAAD/4Qn4aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA0LjQuMC1FeGl2MiI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjMxMjEiIGV4aWY6UGl4ZWxZRGltZW5zaW9uPSIzMTIwIiB0aWZmOkltYWdlV2lkdGg9IjMxMjEiIHRpZmY6SW1hZ2VIZWlnaHQ9IjMxMjAiIHRpZmY6T3JpZW50YXRpb249IjEiLz4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUEBAUKBwcGCAwKDAwLCgsLDQ4SEA0OEQ4LCxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJFA0LDRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgAMgAyAwEiAAIRAQMRAf/EAB0AAAEEAwEBAAAAAAAAAAAAAAAEBgcIAwUJAgH/xAA1EAABAwMCBAMGBAcBAAAAAAABAgMEAAURBiEHEhMxQVGBCAkUImFxMlKRsRUjNDVicqLB/8QAGgEAAgMBAQAAAAAAAAAAAAAAAwYCBAUAAf/EACURAAICAQIFBQEAAAAAAAAAAAECAAMRBDESEyEzsQU0QXGBMv/aAAwDAQACEQMRAD8A6AlOAaYXFzWb2j9FXyZBeiM3SPCcfYXPcDbCCAfnWo7cqT39M1IhScGqTe9I1a5YuDtjtDLLa3bzdOn1FfiQltsrPL98pB+1BnTmrxc4p6r4q35y46n1DIvU7HSUVKSpttIWrCG+UkFG+Rj8x9WtamWpcxlhT7MFZSoGVK/CVAEhJONs4xn7U7tO6AuN1ZS/GtTzjeeZT2Plx9T2708n/ZzvFzgJlw3YzyUtKkyEtuArSEjtgd98bVA2Iu5hFosfqol5vYF4cacsESHNm6otWo9TJjgxINmHO1AaLZOXVJSP5gDi0krOylrAyavCy3gYrl/7u/iPetNaqu/Dxi9ll6TFXOtcBbLS40mS0cuMuZSFpyg5CkqBHKdj2rqS01lO3apiDmLp0Up6B+v6UV7OnjpGqJ+8P0DM4lcTuEWn1P8Aw9pkKmBSknB6uWyc/dCcD1q+3w6vMVAPtA8O5etdUacviDiNpQuXANpSMuqWQ0rJ8gkqVj/Gg2krWzLuBD0Kr2qrbEzT8LOGemLNpaPp5Nvgy2GkAORlhC1KP5lDvv5mn3cdLWWDZXER7VFixkt9M8jaUISnfY4GAN6h2RwCMu9HVj+o5H8OYBktW4MMobbUN/xJSFn7lWfrSviHw2uvGEwRGvTlnkwm2nEkNoeCuYAqJSsFB380+vhSoCDgE7xxwwyR8fEhjRnAluxe3bom8WFhSLYYku6SOmcpQG2y2fQqdQPrmujMRvDYyD2qrFi4RybXfLXqy3XNZumkmHIy+k0lpmW0rlckJUhOyQoJIwNgcEdqtawoOtpUg8yVAFJ8wdxTLpCWoUmKmtULqHAnrFFZOkfMUVcxKUA0o+FaW82NEyNcIjpCWpsdTXP+XII/cg04+cBBJISPEnYUwOIfExGlWmW4dqdvEh4KUk84bZSAcEqVuSN+wFQsZEQmw4ELUju4WsdZEOoUTI0NiCG/i4aHTHmttKy40QcBYT2WMjcdx4Z3r68zJbukIQFcoQ2gPTHWygJQkYASMDmUfEEY+tLNMQZN+cfuDykiTIdU+6hA5UKClE7Dwwe1Oe72NHwTrxASoIwlAzjPmcmkcKCpCiPnOCYDbxwaTtbLOg5a2nEyF3RtbwUjcKC0YTjzGMH1qQIUYRYjLI36baW/0GP/ACoe4LTb5C0441eJDdxhxpimYoSyG1oaGFBJUNl8pOBsNsVLUbUVtdXyqkpacPZLvyn9e1Oum4OUvBtiI+p4zc5s3zF/SV5UVnBCgCCCD2Ioq1K0ji9vuuahW2txamwcBClEgbeVNLisSE2gAkAtLyPP5k0UVm6/27/nmaPp3uV/fBmLQP8ATN/6qH/Rrf33+2u+n70UUtV/wZv2d6ZtBgHRUQ43L0gk+Z6iqWLSlTzuQDv4iiimyjsp9CLOo7z/AGfMTdiQNgPAetFFFGlSf//Z" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">09:15 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-end">
+                                        <div class="w-3/4 2xl:w-1/2 flex justify-end  space-x-1">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Nemo enim ipsam voluptatem quia voluptas sit
+                                                </div>
+                                                <div class="flex mt-0.5">
+                                                    <span class="text-gray-400 text-sm">09:20 am</span>
+                                                    <div class="flex items-center justify-center text-gray-500 ml-1" title="Sent">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="data:image/jpeg;base64,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" class="w-12 h-12 rounded-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <textarea id="textarea_default" class="w-full h-24 mt-2 border-gray-300 focus:border-gray-300 focus:outline-none focus:ring-0 rounded-lg" placeholder="Write your message here..."></textarea>
+                                    <div class="flex items-center justify-end">
+                                        <button class="bg-primary hover:bg-primary-dark rounded-lg mt-4 px-10 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Send</button>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- end::Checkbox Label Right-->
-
-                            
+                            <div
+                                class="flex flex-col justify-between h-[720px]" 
+                                :class="activeMessage === 2 ? 'block' : 'hidden'"
+                            >
+                                <h5 class="text-lg p-4 border-b-2 font-semibold">To: Anthony Ruiz</h5>
+                                <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
+                                    <div class="flex flex-col">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
+                                            <img src="./../assets/message2.03ad6f04.jpg" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">Wed 07:24 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
+                                            <img src="./../assets/message2.03ad6f04.jpg" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">Wed 07:25 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-end">
+                                        <div class="w-3/4 2xl:w-1/2 flex justify-end  space-x-1">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Quis autem vel eum iure reprehenderit qui in ea voluptate?
+                                                </div>
+                                                <div class="flex mt-0.5">
+                                                    <span class="text-gray-400 text-sm">Wed 07:32 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Sent">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="data:image/jpeg;base64,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" class="w-12 h-12 rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
+                                            <img src="./../assets/message2.03ad6f04.jpg" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">Wed 07:41 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="p-4">
+                                    <textarea id="textarea_default" class="w-full h-24 mt-2 border-gray-300 focus:border-gray-300 focus:outline-none focus:ring-0 rounded-lg" placeholder="Write your message here..."></textarea>
+                                    <div class="flex items-center justify-end">
+                                        <button class="bg-primary hover:bg-primary-dark rounded-lg mt-4 px-10 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col justify-between h-[720px]" 
+                                :class="activeMessage === 3 ? 'block' : 'hidden'"
+                            >
+                                <h5 class="text-lg p-4 border-b-2 font-semibold">To: Maria Watkins</h5>
+                                <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
+                                    <div class="flex flex-col items-end">
+                                        <div class="w-3/4 2xl:w-1/2 flex justify-end  space-x-1">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.
+                                                </div>
+                                                <div class="flex mt-0.5">
+                                                    <span class="text-gray-400 text-sm">24 Jan 11:54 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="data:image/jpeg;base64,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" class="w-12 h-12 rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
+                                            <img src="./../assets/message3.3e8c5ab6.jpg" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">26 Jan 10:27 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <textarea id="textarea_default" class="w-full h-24 mt-2 border-gray-300 focus:border-gray-300 focus:outline-none focus:ring-0 rounded-lg" placeholder="Write your message here..."></textarea>
+                                    <div class="flex items-center justify-end">
+                                        <button class="bg-primary hover:bg-primary-dark rounded-lg mt-4 px-10 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Send</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- end::Default Checkbox -->
-
-                    <!-- start::Color Checkbox -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Color Checkbox</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
-                            <!-- start::Checkbox Color Primary -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_primary">Color Primary</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_primary" 
-                                    id="checkbox_color_primary" 
-                                    class="ml-2 text-primary border border-primary focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Primary -->
-
-                            <!-- start::Checkbox Color Secondary -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_secondary">Color Secondary</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_secondary" 
-                                    id="checkbox_color_secondary" 
-                                    class="ml-2 text-secondary border border-secondary focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Secondary -->
-
-                            <!-- start::Checkbox Color Red -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_red">Color Red</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_red" 
-                                    id="checkbox_color_red" 
-                                    class="ml-2 text-red-600 border border-red-600 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Red -->
-
-                            <!-- start::Checkbox Color Green -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_green">Color Green</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_green" 
-                                    id="checkbox_color_green" 
-                                    class="ml-2 text-green-500 border border-green-500 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Green -->
-
-                            <!-- start::Checkbox Color Blue -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_blue">Color Blue</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_blue" 
-                                    id="checkbox_color_blue" 
-                                    class="ml-2 text-blue-500 border border-blue-500 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Blue -->
-
-                            <!-- start::Checkbox Color Yellow -->
-                            <div class="flex items-center">
-                                <label for="checkbox_color_yellow">Color Yellow</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_yellow" 
-                                    id="checkbox_color_yellow" 
-                                    class="ml-2 text-yellow-500 border border-yellow-500 focus:ring-0"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Checkbox Color Yellow -->
-                        </div>
-                    </div>
-                    <!-- end::Color Checkbox -->
+                    <!-- end::Messages -->
                 </div>
                 <!-- end:Page content -->
             </div>
