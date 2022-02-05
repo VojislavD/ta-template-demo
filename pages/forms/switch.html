@@ -13,7 +13,7 @@
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.4.2/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-      <link rel="stylesheet" href="./../assets/tailwind.10fd3ffa.css">
+      <link rel="stylesheet" href="./../../assets/tailwind.f2dda61a.css">
     </head>
     <body>
         <div 
@@ -43,7 +43,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../index.html"
+                        href="./../../index.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -89,7 +89,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/inbox.html"
+                                    href="./../email/inbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -101,7 +101,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/viewMessage.html"
+                                    href="./../email/viewMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -113,7 +113,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/newMessage.html"
+                                    href="./../email/newMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -131,7 +131,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./messages.html"
+                        href="./../messages.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -151,7 +151,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./calendar.html"
+                        href="./../calendar.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -181,9 +181,9 @@
                         >
                             <div class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                                  </svg>
-                                <span class="ml-3">Form Elements</span>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <span class="ml-3">User Interface</span>
                             </div>
                             <svg class="w-3 h-3 transition duration-300" :class="linkActive ? 'rotate-90' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </div>
@@ -197,7 +197,97 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/input.html"
+                                    href="./../ui/accordions.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Accordions</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../ui/buttons.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Buttons</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../ui/cards.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Cards</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../ui/tabs.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Tabs</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+                        </ul>
+                        <!-- end::Submenu -->
+                    </div>
+                    <!-- end::Menu link -->
+
+                    <!-- start::Menu link -->
+                    <div
+                        x-data="{ linkHover: false, linkActive: false }"
+                    >
+                        <div 
+                            @mouseover = "linkHover = true"
+                            @mouseleave = "linkHover = false"
+                            @click = "linkActive = !linkActive"
+                            class="flex items-center justify-between text-gray-400 hover:text-gray-100 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
+                            :class=" linkActive ? 'bg-black bg-opacity-30 text-gray-100' : ''"
+                        >
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                  </svg>
+                                <span class="ml-3">Forms</span>
+                            </div>
+                            <svg class="w-3 h-3 transition duration-300" :class="linkActive ? 'rotate-90' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </div>
+                        <!-- start::Submenu -->
+                        <ul
+                            x-show="linkActive"
+                            x-cloak
+                            x-collapse.duration.300ms
+                            class="text-gray-400"
+                        >
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../forms/layout.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Layout</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../forms/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -209,7 +299,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/checkbox.html"
+                                    href="./../forms/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -221,7 +311,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/radio.html"
+                                    href="./../forms/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -233,7 +323,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/textarea.html"
+                                    href="./../forms/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -245,7 +335,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/switch.html"
+                                    href="./../forms/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -257,7 +347,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/select.html"
+                                    href="./../forms/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -268,66 +358,6 @@
                         </ul>
                         <!-- end::Submenu -->
                     </div>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./formLayouts.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Form Layouts
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./buttons.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Buttons
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./tables.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Tables
-                        </span>
-                    </a>
                     <!-- end::Menu link -->
 
                     <!-- start::Menu link -->
@@ -360,7 +390,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/bar_charts.html"
+                                    href="./../charts/bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -372,7 +402,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/line_charts.html"
+                                    href="./../charts/line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -384,7 +414,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/other_charts.html"
+                                    href="./../charts/other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -395,6 +425,27 @@
                         </ul>
                         <!-- end::Submenu -->
                     </div>
+                    <!-- end::Menu link -->
+
+                    <!-- start::Menu link -->
+                    <a 
+                        x-data="{ linkHover: false }"
+                        @mouseover = "linkHover = true"
+                        @mouseleave = "linkHover = false"
+                        href="./../maps.html"
+                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span 
+                            class="ml-3 transition duration-200" 
+                            :class="linkHover ? 'text-gray-100' : ''"
+                        >
+                            Maps
+                        </span>
+                    </a>
                     <!-- end::Menu link -->
 
                     <!-- start::Menu link -->
@@ -426,7 +477,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/info.html"
+                                    href="./../modals/info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -438,7 +489,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/confirmation.html"
+                                    href="./../modals/confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -450,7 +501,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/authentication.html"
+                                    href="./../modals/authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -468,78 +519,17 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./maps.html"
+                        href="./../tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                         <span 
                             class="ml-3 transition duration-200" 
                             :class="linkHover ? 'text-gray-100' : ''"
                         >
-                            Maps
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./cards.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Cards
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./tabs.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Tabs
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./accordions.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Accordions
+                            Tables
                         </span>
                     </a>
                     <!-- end::Menu link -->
@@ -575,7 +565,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./generic/emptyPage.html"
+                                    href="./../generic/emptyPage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -619,7 +609,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/signIn.html"
+                                    href="./../authentication/basic/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -631,7 +621,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/signUp.html"
+                                    href="./../authentication/basic/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -643,7 +633,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/forgotPassword.html"
+                                    href="./../authentication/basic/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -651,11 +641,11 @@
                                 </a>
                             </li>
                             <!-- end::Submenu link -->
-
+                            
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/resetPassword.html"
+                                    href="./../authentication/basic/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -667,7 +657,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/emailVerification.html"
+                                    href="./../authentication/basic/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -681,7 +671,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/signIn.html"
+                                    href="./../authentication/illustration/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -693,7 +683,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/signUp.html"
+                                    href="./../authentication/illustration/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -705,7 +695,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/forgotPassword.html"
+                                    href="./../authentication/illustration/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -717,7 +707,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/resetPassword.html"
+                                    href="./../authentication/illustration/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -729,7 +719,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/emailVerification.html"
+                                    href="./../authentication/illustration/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -743,7 +733,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/signIn.html"
+                                    href="./../authentication/cover/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -755,7 +745,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/signUp.html"
+                                    href="./../authentication/cover/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -767,7 +757,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/forgotPassword.html"
+                                    href="./../authentication/cover/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -779,7 +769,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/resetPassword.html"
+                                    href="./../authentication/cover/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -791,7 +781,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/emailVerification.html"
+                                    href="./../authentication/cover/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -809,7 +799,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./profile.html"
+                        href="./../profile.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -829,7 +819,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./invoices.html"
+                        href="./../invoices.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -843,7 +833,7 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <div
                         x-data="{ linkHover: false, linkActive: false }"
@@ -875,7 +865,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/basic.html"
+                                    href="./../error/404/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -887,7 +877,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/illustration.html"
+                                    href="./../error/404/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -899,7 +889,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/illustration_cover.html"
+                                    href="./../error/404/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -913,7 +903,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/basic.html"
+                                    href="./../error/500/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -925,7 +915,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/illustration.html"
+                                    href="./../error/500/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -937,7 +927,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/illustration_cover.html"
+                                    href="./../error/500/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -955,7 +945,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./maintenance.html"
+                        href="./../maintenance.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1000,7 +990,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/basic.html"
+                                    href="./../faq/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1012,7 +1002,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/qa.html"
+                                    href="./../faq/qa.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1024,7 +1014,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/accordion.html"
+                                    href="./../faq/accordion.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1066,7 +1056,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./coming_soon/basic.html"
+                                    href="./../coming_soon/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1078,7 +1068,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./coming_soon/timer.html"
+                                    href="./../coming_soon/timer.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1096,7 +1086,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pricing.html"
+                        href="./../pricing.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1214,7 +1204,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1263,7 +1253,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1312,7 +1302,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1361,7 +1351,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1395,7 +1385,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="./../assets/img/profile.jpg"
+                                        src="./../../assets/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1413,7 +1403,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="#"
+                                            href="./../profile.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1432,7 +1422,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="#"
+                                            href="./../email/inbox.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1445,7 +1435,7 @@
                                                         :class=" linkHover ? 'text-primary' : ''"
                                                     >
                                                         Inbox
-                                                        <span class="bg-red-600 text-gray-100 text-xs px-1.5 py-0.5 ml-2 rounded">15</span>
+                                                        <span class="bg-red-600 text-gray-100 text-xs px-1.5 py-0.5 ml-2 rounded">3</span>
                                                     </p>
                                                 </div>
                                             </div>
@@ -1454,7 +1444,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="#"
+                                            href="./../settings.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1507,514 +1497,561 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <div class="grid grid-cols-1 xl:grid-cols-2 bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar mb-12">
-                        <div class="px-2 mb-12">
-                            <!-- start::Basic Accordions -->
-                            <h4 class="text-xl font-semibold mb-4">Basic Accordions</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
-                                    >
-                                        Accordion Item 1
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        Accordion Item 2
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        Accordion Item 3
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Basic Accordions -->
-                        </div>
+                    <!-- start::Default Switch -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Default Switch</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
 
-                        <div class="px-2 mb-12">
-                            <!-- start::Background Color On Active -->
-                            <h4 class="text-xl font-semibold mb-4">Background Color On Active</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full text-left px-4 py-2 hover:text-primary"
-                                        :class="accordion1 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
+                            <!-- start::Switch Active -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Active</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_active" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_active" 
+                                        name="switch_active" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
                                     >
-                                        Accordion Item 1
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="px-4 py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full text-left px-4  py-2 hover:text-primary"
-                                        :class="accordion2 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
-                                    >
-                                        Accordion Item 2
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="px-4 py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full text-left px-4 py-2 hover:text-primary"
-                                        :class="accordion3 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
-                                    >
-                                        Accordion Item 3
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="px-4 py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                            <!-- end::Background Color On Active -->
-                        </div>
+                            <!-- end::Switch Active -->
 
-                        <div class="px-2 mb-12">
-                            <!-- start::Accordions With Arrow Icon -->
-                            <h4 class="text-xl font-semibold mb-4">Accordions With Arrow Icon</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
+                            <!-- start::Switch Inactive -->
+                            <div
+                                x-data="{ active: false }"
+                            >
+                                <label>Switch Inactive</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_inactive" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_inactive" 
+                                        name="switch_inactive" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
                                     >
-                                        <p>Accordion Item 1</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'text-primary rotate-180 transition duration-300' : 'rotate-0 transition duration-300'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 2</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'text-primary rotate-180 transition duration-300' : 'rotate-0 transition duration-300'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 3</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'text-primary rotate-180 transition duration-300' : 'rotate-0 transition duration-300'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                            <!-- end::Accordions With Arrow Icon -->
-                        </div>
+                            <!-- end::Switch Inactive -->
 
-                        <div class="px-2 mb-12">
-                            <!-- start::Accordions With Plus & Minus Icon -->
-                            <h4 class="text-xl font-semibold mb-4">Accordions With Plus & Minus Icon</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
+                            <!-- start::Switch Active Disabled -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Active Disabled</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-gray-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_active_disabled" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_active_disabled" 
+                                        name="switswitch_active_disabled_active" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                        disabled
                                     >
-                                        <p>Accordion Item 1</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 2</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 3</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                            <!-- end::Accordions With Plus & Minus Icon -->
-                        </div>
+                            <!-- end::Switch Active Disabled -->
 
-                        <div class="px-2 mb-12">
-                            <!-- start::Accordions With Plus & Minus Icon Left -->
-                            <h4 class="text-xl font-semibold mb-4">Accordions With Plus & Minus Icon Left</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
+                            <!-- start::Switch Inactive Disabled -->
+                            <div
+                                x-data="{ active: false }"
+                            >
+                                <label>Switch Inactive Disabled</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-500'"
+                                >
+                                    <label 
+                                        for="switch_inactive_disabled" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_inactive_disabled" 
+                                        name="switch_inactive_disabled" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                        disabled
                                     >
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 1</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 2</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 3</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                            <!-- end::Accordions With Plus & Minus Icon Left -->
-                        </div>
+                            <!-- end::Switch Inactive Disabled -->
 
-                        <div class="px-2 mb-12">
-                            <!-- start::Accordions With Rounded Plus & Minus Icon -->
-                            <h4 class="text-xl font-semibold mb-4">Accordions With Rounded Plus & Minus Icon</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
+                            <!-- start::Switch Active Square -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Active Square</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_active_square" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_active_square" 
+                                        name="switch_active_square" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
                                     >
-                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion1 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion1 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 1</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion2 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion2 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 2</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion3 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion3 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 3</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                            <!-- end::Accordions With Rounded Plus & Minus Icon -->
+                            <!-- end::Switch Active Square -->
+
+                            <!-- start::Switch Inactive Square -->
+                            <div
+                                x-data="{ active: false }"
+                            >
+                                <label>Switch Inactive Square</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_inactive_square" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_inactive_square" 
+                                        name="switch_inactive_square" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Inactive Square -->
+
+                            <!-- start::Switch Active Disabled Square -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Active Disabled Square</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 transition duration-200 ease-linear"
+                                    :class="active ? 'bg-gray-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_active_disabled_square" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_active_disabled_square" 
+                                        name="switch_active_disabled_square" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                        disabled
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Active Disabled Square -->
+
+                            <!-- start::Switch Inactive Disabled Square -->
+                            <div
+                                x-data="{ active: false }"
+                            >
+                                <label>Switch Inactive Disabled Square</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-500'"
+                                >
+                                    <label 
+                                        for="switch_inactive_disabled_square" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_inactive_disabled_square" 
+                                        name="switch_inactive_disabled_square" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                        disabled
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Inactive Disabled Square -->
                         </div>
                     </div>
+                    <!-- end::Default Switch -->
+
+                    <!-- start::Switch Colors -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Switch Colors</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
+
+                            <!-- start::Color Primary -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Primary</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-primary' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_primary" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-primary' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_primary" 
+                                        name="switch_color_primary" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Primary -->
+
+                            <!-- start::Color Secondary -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Secondary</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-secondary' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_secondary" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-secondary' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_secondary" 
+                                        name="switch_color_secondary" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Secondary -->
+
+                            <!-- start::Color Red -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Red</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-red-600' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_red" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-red-600' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_red" 
+                                        name="switch_color_red" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Red -->
+
+                            <!-- start::Color Yellow -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Yellow</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-yellow-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_yellow" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-yellow-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_yellow" 
+                                        name="switch_color_yellow" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Yellow -->
+
+                            <!-- start::Color Blue -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Blue</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-blue-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_blue" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-blue-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_blue" 
+                                        name="switch_color_blue" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Blue -->
+                        </div>
+                    </div>
+                    <!-- end::Switch Colors -->
+
+                    <!-- start::Switch Icons -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Switch Icons</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-7 gap-6 mt-6">
+
+                            <!-- start::Switch Sound -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Sound</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_sound" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_sound" 
+                                        name="switch_sound" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Sound -->
+
+                            <!-- start::Switch Visibility -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Visibility</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_visibility" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_visibility" 
+                                        name="switch_visibility" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Visibility -->
+
+                            <!-- start::Switch Locked -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Locked</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_locked" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_locked" 
+                                        name="switch_locked" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Locked -->
+
+                            <!-- start::Switch Online -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Online</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_online" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_online" 
+                                        name="switch_online" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M13 12a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Online -->
+
+                            <!-- start::Switch OK -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch OK</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_ok" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_ok" 
+                                        name="switch_ok" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch OK -->
+
+                            <!-- start::Switch Like -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Like</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_like" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_like" 
+                                        name="switch_like" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Like -->
+
+                            <!-- start::Switch Light -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Light</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_light" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_light" 
+                                        name="switch_light" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Light -->
+                        </div>
+                    </div>
+                    <!-- end::Switch Icons -->
                 </div>
                 <!-- end:Page content -->
             </div>
