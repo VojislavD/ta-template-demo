@@ -13,15 +13,16 @@
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.4.2/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-      <link rel="stylesheet" href="./../../assets/tailwind.dda70c1b.css">
+      <link rel="stylesheet" href="./../assets/tailwind.dda70c1b.css">
     </head>
     <body>
         <div 
             x-data="{ 
                 menuOpen: false, 
-                basicInfoModal: false, 
-                wideInfoModal: false,
-                ultraWideInfoModal: false,
+                basicSignInModal: false,
+                basicSignUpModal: false,
+                advanceSignInModal: false,
+                advanceSignUpModal: false,
             }" 
             class="flex min-h-screen custom-scrollbar"
         >
@@ -48,7 +49,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../../index.html"
+                        href="../index.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,7 +95,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../email/inbox.html"
+                                    href="./email/inbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -106,7 +107,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../email/viewMessage.html"
+                                    href="./email/viewMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -118,7 +119,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../email/newMessage.html"
+                                    href="./email/newMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -136,7 +137,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../messages.html"
+                        href="./messages.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -156,7 +157,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../calendar.html"
+                        href="./calendar.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -202,7 +203,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../ui/accordions.html"
+                                    href="./ui/accordions.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -214,7 +215,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../ui/buttons.html"
+                                    href="./ui/buttons.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -226,7 +227,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../ui/cards.html"
+                                    href="./ui/cards.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -238,7 +239,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../ui/tabs.html"
+                                    href="./ui/tabs.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -280,7 +281,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../forms/layout.html"
+                                    href="./forms/layout.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -292,7 +293,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../forms/input.html"
+                                    href="./forms/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -304,7 +305,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../forms/checkbox.html"
+                                    href="./forms/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -316,7 +317,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../forms/radio.html"
+                                    href="./forms/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -328,7 +329,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../forms/textarea.html"
+                                    href="./forms/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -340,7 +341,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../forms/switch.html"
+                                    href="./forms/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -352,7 +353,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../forms/select.html"
+                                    href="./forms/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -395,7 +396,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../charts/bar_charts.html"
+                                    href="./charts/bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -407,7 +408,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../charts/line_charts.html"
+                                    href="./charts/line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -419,7 +420,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../charts/other_charts.html"
+                                    href="./charts/other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -437,7 +438,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../colors.html"
+                        href="./colors.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -457,7 +458,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../maps.html"
+                        href="./maps.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -502,7 +503,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/info.html"
+                                    href="./modals/info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -514,7 +515,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/confirmation.html"
+                                    href="./modals/confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -526,7 +527,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../modals/authentication.html"
+                                    href="./modals/authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -544,7 +545,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../tables.html"
+                        href="./tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -590,7 +591,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../generic/emptyPage.html"
+                                    href="./generic/emptyPage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -634,7 +635,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/basic/signIn.html"
+                                    href="./authentication/basic/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -646,7 +647,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/basic/signUp.html"
+                                    href="./authentication/basic/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -658,7 +659,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/basic/forgotPassword.html"
+                                    href="./authentication/basic/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -666,11 +667,11 @@
                                 </a>
                             </li>
                             <!-- end::Submenu link -->
-                            
+
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/basic/resetPassword.html"
+                                    href="./authentication/basic/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -682,7 +683,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/basic/emailVerification.html"
+                                    href="./authentication/basic/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -696,7 +697,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/illustration/signIn.html"
+                                    href="./authentication/illustration/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -708,7 +709,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/illustration/signUp.html"
+                                    href="./authentication/illustration/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -720,7 +721,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/illustration/forgotPassword.html"
+                                    href="./authentication/illustration/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -732,7 +733,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/illustration/resetPassword.html"
+                                    href="./authentication/illustration/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -744,7 +745,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/illustration/emailVerification.html"
+                                    href="./authentication/illustration/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -758,7 +759,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/cover/signIn.html"
+                                    href="./authentication/cover/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -770,7 +771,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/cover/signUp.html"
+                                    href="./authentication/cover/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -782,7 +783,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/cover/forgotPassword.html"
+                                    href="./authentication/cover/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -794,7 +795,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/cover/resetPassword.html"
+                                    href="./authentication/cover/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -806,7 +807,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../authentication/cover/emailVerification.html"
+                                    href="./authentication/cover/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -824,7 +825,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../profile.html"
+                        href="./profile.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -844,7 +845,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../invoices.html"
+                        href="./invoices.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -858,7 +859,7 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-                    
+
                     <!-- start::Menu link -->
                     <div
                         x-data="{ linkHover: false, linkActive: false }"
@@ -890,7 +891,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../error/404/basic.html"
+                                    href="./error/404/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -902,7 +903,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../error/404/illustration.html"
+                                    href="./error/404/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -914,7 +915,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../error/404/illustration_cover.html"
+                                    href="./error/404/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -928,7 +929,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../error/500/basic.html"
+                                    href="./error/500/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -940,7 +941,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../error/500/illustration.html"
+                                    href="./error/500/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -952,7 +953,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../error/500/illustration_cover.html"
+                                    href="./error/500/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -970,7 +971,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../maintenance.html"
+                        href="./maintenance.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1015,7 +1016,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../faq/basic.html"
+                                    href="./faq/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1027,7 +1028,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../faq/qa.html"
+                                    href="./faq/qa.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1039,7 +1040,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../faq/accordion.html"
+                                    href="./faq/accordion.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1081,7 +1082,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../coming_soon/basic.html"
+                                    href="./coming_soon/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1093,7 +1094,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../coming_soon/timer.html"
+                                    href="./coming_soon/timer.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1111,7 +1112,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../pricing.html"
+                        href="./pricing.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1229,7 +1230,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../../assets/img/profile.jpg"
+                                                    src="./../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1278,7 +1279,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../../assets/img/profile.jpg"
+                                                    src="./../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1327,7 +1328,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../../assets/img/profile.jpg"
+                                                    src="./../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1376,7 +1377,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../../assets/img/profile.jpg"
+                                                    src="./../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1410,7 +1411,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="./../../assets/img/profile.jpg"
+                                        src="./../assets/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1428,7 +1429,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="./../profile.html"
+                                            href="./profile.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1447,7 +1448,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="./../email/inbox.html"
+                                            href="./email/inbox.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1469,7 +1470,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="./../settings.html"
+                                            href="./settings.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1522,129 +1523,1090 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <p class="text-sm">*Click on modal to open it</p>
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Info Modals -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12 space-y-12">
+                        <!-- start:: Custom Colors -->
                         <div>
-                            <h4 class="text-xl capitalize">Info Modals</h4>
-                            <div class="mt-6 flex flex-col space-y-16">
-                                <!-- start:: Basic Info Modal -->
-                                <div class="space-y-4">
-                                    <button 
-                                        @click="basicInfoModal = !basicInfoModal"
-                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                        >
-                                        Basic Info Modal
-                                    </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../assets/img/modals/basic_info_modal.png" alt="basic_info_modal">
+                            <h4 class="text-lg capitalize">Custom</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-primary h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>primary</span>
+                                    <span>#1f4b8e</span>
                                 </div>
-                                <!-- end:: Basic Info Modal -->
-
-                                <!-- start:: Wide Info Modal -->
-                                <div class="space-y-4">
-                                    <button 
-                                        @click="wideInfoModal = !wideInfoModal"
-                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                    >
-                                        Wide Info Modal
-                                    </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../assets/img/modals/wide_info_modal.png" alt="wide_info_modal">
+                                <div class="bg-primary-dark h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>primary-dark</span>
+                                    <span>#102a52</span>
                                 </div>
-                                <!-- end:: Wide Info Modal -->
-
-                                <!-- start:: Ultra Wide Info Modal -->
-                                <div class="space-y-4">
-                                    <button 
-                                        @click="ultraWideInfoModal = !ultraWideInfoModal"
-                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                    >
-                                    Ultra Wide Info Modals
-                                    </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../assets/img/modals/ultra_wide_info_modal.png" alt="ultra_wide_info_modal">
+                                <div class="bg-secondary h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>secondary</span>
+                                    <span>#182430</span>
                                 </div>
-                                <!-- end:: Ultra Wide Info Modal -->
+                                <div class="bg-secondary-dark h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>secondary-dark</span>
+                                    <span>#060C11</span>
+                                </div>
                             </div>
                         </div>
-                        <!-- end:: Info Modals -->
+                        <!-- end:: Custom Colors -->
+
+                        <!-- start:: Slate Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Slate</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-slate-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>slate-50</span>
+                                    <span>#f8fafc</span>
+                                </div>
+                                <div class="bg-slate-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>slate-100</span>
+                                    <span>#f1f5f9</span>
+                                </div>
+                                <div class="bg-slate-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>slate-200</span>
+                                    <span>#e2e8f0</span>
+                                </div>
+                                <div class="bg-slate-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>slate-300</span>
+                                    <span>#cbd5e1</span>
+                                </div>
+                                <div class="bg-slate-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>slate-400</span>
+                                    <span>#94a3b8</span>
+                                </div>
+                                <div class="bg-slate-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>slate-500</span>
+                                    <span>#64748b</span>
+                                </div>
+                                <div class="bg-slate-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>slate-600</span>
+                                    <span>#475569</span>
+                                </div>
+                                <div class="bg-slate-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>slate-700</span>
+                                    <span>#334155</span>
+                                </div>
+                                <div class="bg-slate-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>slate-800</span>
+                                    <span>#1e293b</span>
+                                </div>
+                                <div class="bg-slate-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>slate-900</span>
+                                    <span>#0f172a</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Slate Colors -->
+
+                        <!-- start:: Gray Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Gray</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-gray-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>gray-50</span>
+                                    <span>#f9fafb</span>
+                                </div>
+                                <div class="bg-gray-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>gray-100</span>
+                                    <span>#f3f4f6</span>
+                                </div>
+                                <div class="bg-gray-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>gray-200</span>
+                                    <span>#e5e7eb</span>
+                                </div>
+                                <div class="bg-gray-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>gray-300</span>
+                                    <span>#d1d5db</span>
+                                </div>
+                                <div class="bg-gray-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>gray-400</span>
+                                    <span>#9ca3af</span>
+                                </div>
+                                <div class="bg-gray-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>gray-500</span>
+                                    <span>#6b7280</span>
+                                </div>
+                                <div class="bg-gray-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>gray-600</span>
+                                    <span>#4b5563</span>
+                                </div>
+                                <div class="bg-gray-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>gray-700</span>
+                                    <span>#374151</span>
+                                </div>
+                                <div class="bg-gray-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>gray-800</span>
+                                    <span>#1f2937</span>
+                                </div>
+                                <div class="bg-gray-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>gray-900</span>
+                                    <span>#111827</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Gray Colors -->
+
+                        <!-- start:: Zinc Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Zinc</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-zinc-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>zinc-50</span>
+                                    <span>#fafafa</span>
+                                </div>
+                                <div class="bg-zinc-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>zinc-100</span>
+                                    <span>#f4f4f5</span>
+                                </div>
+                                <div class="bg-zinc-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>zinc-200</span>
+                                    <span>#e4e4e7</span>
+                                </div>
+                                <div class="bg-zinc-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>zinc-300</span>
+                                    <span>#d4d4d8</span>
+                                </div>
+                                <div class="bg-zinc-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>zinc-400</span>
+                                    <span>#a1a1aa</span>
+                                </div>
+                                <div class="bg-zinc-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>zinc-500</span>
+                                    <span>#71717a</span>
+                                </div>
+                                <div class="bg-zinc-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>zinc-600</span>
+                                    <span>#52525b</span>
+                                </div>
+                                <div class="bg-zinc-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>zinc-700</span>
+                                    <span>#3f3f46</span>
+                                </div>
+                                <div class="bg-zinc-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>zinc-800</span>
+                                    <span>#27272a</span>
+                                </div>
+                                <div class="bg-zinc-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>zinc-900</span>
+                                    <span>#18181b</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Zinc Colors -->
+
+                        <!-- start:: Neutral Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Neutral</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-neutral-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>neutral-50</span>
+                                    <span>#fafafa</span>
+                                </div>
+                                <div class="bg-neutral-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>neutral-100</span>
+                                    <span>#f5f5f5</span>
+                                </div>
+                                <div class="bg-neutral-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>neutral-200</span>
+                                    <span>#e5e5e5</span>
+                                </div>
+                                <div class="bg-neutral-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>neutral-300</span>
+                                    <span>#d4d4d4</span>
+                                </div>
+                                <div class="bg-neutral-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>neutral-400</span>
+                                    <span>#a3a3a3</span>
+                                </div>
+                                <div class="bg-neutral-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>neutral-500</span>
+                                    <span>#737373</span>
+                                </div>
+                                <div class="bg-neutral-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>neutral-600</span>
+                                    <span>#525252</span>
+                                </div>
+                                <div class="bg-neutral-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>neutral-700</span>
+                                    <span>#404040</span>
+                                </div>
+                                <div class="bg-neutral-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>neutral-800</span>
+                                    <span>#262626</span>
+                                </div>
+                                <div class="bg-neutral-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>neutral-900</span>
+                                    <span>#171717</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Neutral Colors -->
+
+                        <!-- start:: Stone Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Stone</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-stone-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>stone-50</span>
+                                    <span>#fafaf9</span>
+                                </div>
+                                <div class="bg-stone-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>stone-100</span>
+                                    <span>#f5f5f4</span>
+                                </div>
+                                <div class="bg-stone-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>stone-200</span>
+                                    <span>#e7e5e4</span>
+                                </div>
+                                <div class="bg-stone-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>stone-300</span>
+                                    <span>#d6d3d1</span>
+                                </div>
+                                <div class="bg-stone-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>stone-400</span>
+                                    <span>#a8a29e</span>
+                                </div>
+                                <div class="bg-stone-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>stone-500</span>
+                                    <span>#78716c</span>
+                                </div>
+                                <div class="bg-stone-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>stone-600</span>
+                                    <span>#57534e</span>
+                                </div>
+                                <div class="bg-stone-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>stone-700</span>
+                                    <span>#44403c</span>
+                                </div>
+                                <div class="bg-stone-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>stone-800</span>
+                                    <span>#292524</span>
+                                </div>
+                                <div class="bg-stone-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>stone-900</span>
+                                    <span>#1c1917</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Stone Colors -->
+
+                        <!-- start:: Red Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Red</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-red-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>red-50</span>
+                                    <span>#fef2f2</span>
+                                </div>
+                                <div class="bg-red-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>red-100</span>
+                                    <span>#fee2e2</span>
+                                </div>
+                                <div class="bg-red-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>red-200</span>
+                                    <span>#fecaca</span>
+                                </div>
+                                <div class="bg-red-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>red-300</span>
+                                    <span>#fca5a5</span>
+                                </div>
+                                <div class="bg-red-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>red-400</span>
+                                    <span>#f87171</span>
+                                </div>
+                                <div class="bg-red-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>red-500</span>
+                                    <span>#ef4444</span>
+                                </div>
+                                <div class="bg-red-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>red-600</span>
+                                    <span>#dc2626</span>
+                                </div>
+                                <div class="bg-red-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>red-700</span>
+                                    <span>#b91c1c</span>
+                                </div>
+                                <div class="bg-red-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>red-800</span>
+                                    <span>#991b1b</span>
+                                </div>
+                                <div class="bg-red-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>red-900</span>
+                                    <span>#7f1d1d</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Red Colors -->
+
+                        <!-- start:: Orange Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Orange</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-orange-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>orange-50</span>
+                                    <span>#fff7ed</span>
+                                </div>
+                                <div class="bg-orange-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>orange-100</span>
+                                    <span>#ffedd5</span>
+                                </div>
+                                <div class="bg-orange-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>orange-200</span>
+                                    <span>#fed7aa</span>
+                                </div>
+                                <div class="bg-orange-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>orange-300</span>
+                                    <span>#fdba74</span>
+                                </div>
+                                <div class="bg-orange-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>orange-400</span>
+                                    <span>#fb923c</span>
+                                </div>
+                                <div class="bg-orange-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>orange-500</span>
+                                    <span>#f97316</span>
+                                </div>
+                                <div class="bg-orange-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>orange-600</span>
+                                    <span>#ea580c</span>
+                                </div>
+                                <div class="bg-orange-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>orange-700</span>
+                                    <span>#c2410c</span>
+                                </div>
+                                <div class="bg-orange-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>orange-800</span>
+                                    <span>#9a3412</span>
+                                </div>
+                                <div class="bg-orange-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>orange-900</span>
+                                    <span>#7c2d12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Orange Colors -->
+
+                        <!-- start:: Amber Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Amber</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-amber-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>amber-50</span>
+                                    <span>#fffbeb</span>
+                                </div>
+                                <div class="bg-amber-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>amber-100</span>
+                                    <span>#fef3c7</span>
+                                </div>
+                                <div class="bg-amber-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>amber-200</span>
+                                    <span>#fde68a</span>
+                                </div>
+                                <div class="bg-amber-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>amber-300</span>
+                                    <span>#fcd34d</span>
+                                </div>
+                                <div class="bg-amber-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>amber-400</span>
+                                    <span>#fbbf24</span>
+                                </div>
+                                <div class="bg-amber-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>amber-500</span>
+                                    <span>#f59e0b</span>
+                                </div>
+                                <div class="bg-amber-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>amber-600</span>
+                                    <span>#d97706</span>
+                                </div>
+                                <div class="bg-amber-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>amber-700</span>
+                                    <span>#b45309</span>
+                                </div>
+                                <div class="bg-amber-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>amber-800</span>
+                                    <span>#92400e</span>
+                                </div>
+                                <div class="bg-amber-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>amber-900</span>
+                                    <span>#78350f</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Amber Colors -->
+
+                        <!-- start:: Yellow Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Yellow</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-yellow-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>yellow-50</span>
+                                    <span>#fefce8</span>
+                                </div>
+                                <div class="bg-yellow-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>yellow-100</span>
+                                    <span>#fef9c3</span>
+                                </div>
+                                <div class="bg-yellow-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>yellow-200</span>
+                                    <span>#fef08a</span>
+                                </div>
+                                <div class="bg-yellow-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>yellow-300</span>
+                                    <span>#fde047</span>
+                                </div>
+                                <div class="bg-yellow-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>yellow-400</span>
+                                    <span>#facc15</span>
+                                </div>
+                                <div class="bg-yellow-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>yellow-500</span>
+                                    <span>#eab308</span>
+                                </div>
+                                <div class="bg-yellow-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>yellow-600</span>
+                                    <span>#ca8a04</span>
+                                </div>
+                                <div class="bg-yellow-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>yellow-700</span>
+                                    <span>#a16207</span>
+                                </div>
+                                <div class="bg-yellow-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>yellow-800</span>
+                                    <span>#854d0e</span>
+                                </div>
+                                <div class="bg-yellow-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>yellow-900</span>
+                                    <span>#713f12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Yellow Colors -->
+
+                        <!-- start:: Lime Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Lime</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-lime-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>lime-50</span>
+                                    <span>#f7fee7</span>
+                                </div>
+                                <div class="bg-lime-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>lime-100</span>
+                                    <span>#ecfccb</span>
+                                </div>
+                                <div class="bg-lime-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>lime-200</span>
+                                    <span>#d9f99d</span>
+                                </div>
+                                <div class="bg-lime-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>lime-300</span>
+                                    <span>#bef264</span>
+                                </div>
+                                <div class="bg-lime-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>lime-400</span>
+                                    <span>#a3e635</span>
+                                </div>
+                                <div class="bg-lime-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>lime-500</span>
+                                    <span>#84cc16</span>
+                                </div>
+                                <div class="bg-lime-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>lime-600</span>
+                                    <span>#65a30d</span>
+                                </div>
+                                <div class="bg-lime-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>lime-700</span>
+                                    <span>#4d7c0f</span>
+                                </div>
+                                <div class="bg-lime-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>lime-800</span>
+                                    <span>#3f6212</span>
+                                </div>
+                                <div class="bg-lime-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>lime-900</span>
+                                    <span>#365314</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Lime Colors -->
+
+                        <!-- start:: Green Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Green</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-green-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>green-50</span>
+                                    <span>#f0fdf4</span>
+                                </div>
+                                <div class="bg-green-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>green-100</span>
+                                    <span>#dcfce7</span>
+                                </div>
+                                <div class="bg-green-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>green-200</span>
+                                    <span>#bbf7d0</span>
+                                </div>
+                                <div class="bg-green-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>green-300</span>
+                                    <span>#86efac</span>
+                                </div>
+                                <div class="bg-green-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>green-400</span>
+                                    <span>#4ade80</span>
+                                </div>
+                                <div class="bg-green-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>green-500</span>
+                                    <span>#22c55e</span>
+                                </div>
+                                <div class="bg-green-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>green-600</span>
+                                    <span>#16a34a</span>
+                                </div>
+                                <div class="bg-green-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>green-700</span>
+                                    <span>#15803d</span>
+                                </div>
+                                <div class="bg-green-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>green-800</span>
+                                    <span>#166534</span>
+                                </div>
+                                <div class="bg-green-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>green-900</span>
+                                    <span>#14532d</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Green Colors -->
+
+                        <!-- start:: Emerald Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Emerald</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-emerald-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>emerald-50</span>
+                                    <span>#ecfdf5</span>
+                                </div>
+                                <div class="bg-emerald-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>emerald-100</span>
+                                    <span>#d1fae5</span>
+                                </div>
+                                <div class="bg-emerald-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>emerald-200</span>
+                                    <span>#a7f3d0</span>
+                                </div>
+                                <div class="bg-emerald-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>emerald-300</span>
+                                    <span>#6ee7b7</span>
+                                </div>
+                                <div class="bg-emerald-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>emerald-400</span>
+                                    <span>#34d399</span>
+                                </div>
+                                <div class="bg-emerald-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>emerald-500</span>
+                                    <span>#10b981</span>
+                                </div>
+                                <div class="bg-emerald-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>emerald-600</span>
+                                    <span>#059669</span>
+                                </div>
+                                <div class="bg-emerald-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>emerald-700</span>
+                                    <span>#047857</span>
+                                </div>
+                                <div class="bg-emerald-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>emerald-800</span>
+                                    <span>#065f46</span>
+                                </div>
+                                <div class="bg-emerald-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>emerald-900</span>
+                                    <span>#064e3b</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Emerald Colors -->
+
+                        <!-- start:: Teal Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Teal</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-teal-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>teal-50</span>
+                                    <span>#f0fdfa</span>
+                                </div>
+                                <div class="bg-teal-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>teal-100</span>
+                                    <span>#ccfbf1</span>
+                                </div>
+                                <div class="bg-teal-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>teal-200</span>
+                                    <span>#99f6e4</span>
+                                </div>
+                                <div class="bg-teal-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>teal-300</span>
+                                    <span>#5eead4</span>
+                                </div>
+                                <div class="bg-teal-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>teal-400</span>
+                                    <span>#2dd4bf</span>
+                                </div>
+                                <div class="bg-teal-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>teal-500</span>
+                                    <span>#14b8a6</span>
+                                </div>
+                                <div class="bg-teal-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>teal-600</span>
+                                    <span>#0d9488</span>
+                                </div>
+                                <div class="bg-teal-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>teal-700</span>
+                                    <span>#0f766e</span>
+                                </div>
+                                <div class="bg-teal-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>teal-800</span>
+                                    <span>#115e59</span>
+                                </div>
+                                <div class="bg-teal-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>teal-900</span>
+                                    <span>#134e4a</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Teal Colors -->
+
+                        <!-- start:: Cyan Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Cyan</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-cyan-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>cyan-50</span>
+                                    <span>#ecfeff</span>
+                                </div>
+                                <div class="bg-cyan-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>cyan-100</span>
+                                    <span>#cffafe</span>
+                                </div>
+                                <div class="bg-cyan-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>cyan-200</span>
+                                    <span>#a5f3fc</span>
+                                </div>
+                                <div class="bg-cyan-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>cyan-300</span>
+                                    <span>#67e8f9</span>
+                                </div>
+                                <div class="bg-cyan-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>cyan-400</span>
+                                    <span>#22d3ee</span>
+                                </div>
+                                <div class="bg-cyan-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>cyan-500</span>
+                                    <span>#06b6d4</span>
+                                </div>
+                                <div class="bg-cyan-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>cyan-600</span>
+                                    <span>#0891b2</span>
+                                </div>
+                                <div class="bg-cyan-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>cyan-700</span>
+                                    <span>#0e7490</span>
+                                </div>
+                                <div class="bg-cyan-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>cyan-800</span>
+                                    <span>#155e75</span>
+                                </div>
+                                <div class="bg-cyan-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>cyan-900</span>
+                                    <span>#164e63</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Cyan Colors -->
+
+                        <!-- start:: Sky Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Sky</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-sky-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>sky-50</span>
+                                    <span>#f0f9ff</span>
+                                </div>
+                                <div class="bg-sky-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>sky-100</span>
+                                    <span>#e0f2fe</span>
+                                </div>
+                                <div class="bg-sky-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>sky-200</span>
+                                    <span>#bae6fd</span>
+                                </div>
+                                <div class="bg-sky-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>sky-300</span>
+                                    <span>#7dd3fc</span>
+                                </div>
+                                <div class="bg-sky-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>sky-400</span>
+                                    <span>#38bdf8</span>
+                                </div>
+                                <div class="bg-sky-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>sky-500</span>
+                                    <span>#0ea5e9</span>
+                                </div>
+                                <div class="bg-sky-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>sky-600</span>
+                                    <span>#0284c7</span>
+                                </div>
+                                <div class="bg-sky-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>sky-700</span>
+                                    <span>#0369a1</span>
+                                </div>
+                                <div class="bg-sky-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>sky-800</span>
+                                    <span>#075985</span>
+                                </div>
+                                <div class="bg-sky-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>sky-900</span>
+                                    <span>#0c4a6e</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Sky Colors -->
+
+                        <!-- start:: Blue Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Blue</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-blue-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>blue-50</span>
+                                    <span>#eff6ff</span>
+                                </div>
+                                <div class="bg-blue-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>blue-100</span>
+                                    <span>#dbeafe</span>
+                                </div>
+                                <div class="bg-blue-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>blue-200</span>
+                                    <span>#bfdbfe</span>
+                                </div>
+                                <div class="bg-blue-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>blue-300</span>
+                                    <span>#93c5fd</span>
+                                </div>
+                                <div class="bg-blue-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>blue-400</span>
+                                    <span>#60a5fa</span>
+                                </div>
+                                <div class="bg-blue-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>blue-500</span>
+                                    <span>#3b82f6</span>
+                                </div>
+                                <div class="bg-blue-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>blue-600</span>
+                                    <span>#2563eb</span>
+                                </div>
+                                <div class="bg-blue-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>blue-700</span>
+                                    <span>#1d4ed8</span>
+                                </div>
+                                <div class="bg-blue-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>blue-800</span>
+                                    <span>#1e40af</span>
+                                </div>
+                                <div class="bg-blue-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>blue-900</span>
+                                    <span>#1e3a8a</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Blue Colors -->
+
+                        <!-- start:: Indigo Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Indigo</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-indigo-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>indigo-50</span>
+                                    <span>#eef2ff</span>
+                                </div>
+                                <div class="bg-indigo-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>indigo-100</span>
+                                    <span>#e0e7ff</span>
+                                </div>
+                                <div class="bg-indigo-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>indigo-200</span>
+                                    <span>#c7d2fe</span>
+                                </div>
+                                <div class="bg-indigo-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>indigo-300</span>
+                                    <span>#a5b4fc</span>
+                                </div>
+                                <div class="bg-indigo-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>indigo-400</span>
+                                    <span>#818cf8</span>
+                                </div>
+                                <div class="bg-indigo-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>indigo-500</span>
+                                    <span>#6366f1</span>
+                                </div>
+                                <div class="bg-indigo-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>indigo-600</span>
+                                    <span>#4f46e5</span>
+                                </div>
+                                <div class="bg-indigo-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>indigo-700</span>
+                                    <span>#4338ca</span>
+                                </div>
+                                <div class="bg-indigo-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>indigo-800</span>
+                                    <span>#3730a3</span>
+                                </div>
+                                <div class="bg-indigo-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>indigo-900</span>
+                                    <span>#312e81</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Indigo Colors -->
+
+                        <!-- start:: Violet Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Violet</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-violet-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>violet-50</span>
+                                    <span>#f5f3ff</span>
+                                </div>
+                                <div class="bg-violet-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>violet-100</span>
+                                    <span>#ede9fe</span>
+                                </div>
+                                <div class="bg-violet-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>violet-200</span>
+                                    <span>#ddd6fe</span>
+                                </div>
+                                <div class="bg-violet-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>violet-300</span>
+                                    <span>#c4b5fd</span>
+                                </div>
+                                <div class="bg-violet-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>violet-400</span>
+                                    <span>#a78bfa</span>
+                                </div>
+                                <div class="bg-violet-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>violet-500</span>
+                                    <span>#8b5cf6</span>
+                                </div>
+                                <div class="bg-violet-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>violet-600</span>
+                                    <span>#7c3aed</span>
+                                </div>
+                                <div class="bg-violet-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>violet-700</span>
+                                    <span>#6d28d9</span>
+                                </div>
+                                <div class="bg-violet-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>violet-800</span>
+                                    <span>#5b21b6</span>
+                                </div>
+                                <div class="bg-violet-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>violet-900</span>
+                                    <span>#4c1d95</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Violet Colors -->
+
+                        <!-- start:: Purple Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Purple</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-purple-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>purple-50</span>
+                                    <span>#faf5ff</span>
+                                </div>
+                                <div class="bg-purple-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>purple-100</span>
+                                    <span>#f3e8ff</span>
+                                </div>
+                                <div class="bg-purple-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>purple-200</span>
+                                    <span>#e9d5ff</span>
+                                </div>
+                                <div class="bg-purple-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>purple-300</span>
+                                    <span>#d8b4fe</span>
+                                </div>
+                                <div class="bg-purple-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>purple-400</span>
+                                    <span>#c084fc</span>
+                                </div>
+                                <div class="bg-purple-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>purple-500</span>
+                                    <span>#a855f7</span>
+                                </div>
+                                <div class="bg-purple-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>purple-600</span>
+                                    <span>#9333ea</span>
+                                </div>
+                                <div class="bg-purple-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>purple-700</span>
+                                    <span>#7e22ce</span>
+                                </div>
+                                <div class="bg-purple-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>purple-800</span>
+                                    <span>#6b21a8</span>
+                                </div>
+                                <div class="bg-purple-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>purple-900</span>
+                                    <span>#581c87</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Purple Colors -->
+
+                        <!-- start:: Fuchsia Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Fuchsia</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-fuchsia-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>fuchsia-50</span>
+                                    <span>#fdf4ff</span>
+                                </div>
+                                <div class="bg-fuchsia-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>fuchsia-100</span>
+                                    <span>#fae8ff</span>
+                                </div>
+                                <div class="bg-fuchsia-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>fuchsia-200</span>
+                                    <span>#f5d0fe</span>
+                                </div>
+                                <div class="bg-fuchsia-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>fuchsia-300</span>
+                                    <span>#f0abfc</span>
+                                </div>
+                                <div class="bg-fuchsia-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>fuchsia-400</span>
+                                    <span>#e879f9</span>
+                                </div>
+                                <div class="bg-fuchsia-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>fuchsia-500</span>
+                                    <span>#d946ef</span>
+                                </div>
+                                <div class="bg-fuchsia-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>fuchsia-600</span>
+                                    <span>#c026d3</span>
+                                </div>
+                                <div class="bg-fuchsia-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>fuchsia-700</span>
+                                    <span>#a21caf</span>
+                                </div>
+                                <div class="bg-fuchsia-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>fuchsia-800</span>
+                                    <span>#86198f</span>
+                                </div>
+                                <div class="bg-fuchsia-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>fuchsia-900</span>
+                                    <span>#701a75</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Fuchsia Colors -->
+
+                        <!-- start:: Pink Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Pink</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-pink-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>pink-50</span>
+                                    <span>#fdf2f8</span>
+                                </div>
+                                <div class="bg-pink-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>pink-100</span>
+                                    <span>#fce7f3</span>
+                                </div>
+                                <div class="bg-pink-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>pink-200</span>
+                                    <span>#fbcfe8</span>
+                                </div>
+                                <div class="bg-pink-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>pink-300</span>
+                                    <span>#f9a8d4</span>
+                                </div>
+                                <div class="bg-pink-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>pink-400</span>
+                                    <span>#f472b6</span>
+                                </div>
+                                <div class="bg-pink-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>pink-500</span>
+                                    <span>#ec4899</span>
+                                </div>
+                                <div class="bg-pink-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>pink-600</span>
+                                    <span>#db2777</span>
+                                </div>
+                                <div class="bg-pink-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>pink-700</span>
+                                    <span>#be185d</span>
+                                </div>
+                                <div class="bg-pink-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>pink-800</span>
+                                    <span>#9d174d</span>
+                                </div>
+                                <div class="bg-pink-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>pink-900</span>
+                                    <span>#831843</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Pink Colors -->
+
+                        <!-- start:: Rose Colors -->
+                        <div>
+                            <h4 class="text-lg capitalize">Rose</h4>
+                            <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 text-center">
+                                <div class="bg-rose-50 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>rose-50</span>
+                                    <span>#fff1f2</span>
+                                </div>
+                                <div class="bg-rose-100 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>rose-100</span>
+                                    <span>#ffe4e6</span>
+                                </div>
+                                <div class="bg-rose-200 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>rose-200</span>
+                                    <span>#fecdd3</span>
+                                </div>
+                                <div class="bg-rose-300 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>rose-300</span>
+                                    <span>#fda4af</span>
+                                </div>
+                                <div class="bg-rose-400 h-20 flex flex-col items-center justify-center text-gray-900">
+                                    <span>rose-400</span>
+                                    <span>#fb7185</span>
+                                </div>
+                                <div class="bg-rose-500 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>rose-500</span>
+                                    <span>#f43f5e</span>
+                                </div>
+                                <div class="bg-rose-600 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>rose-600</span>
+                                    <span>#e11d48</span>
+                                </div>
+                                <div class="bg-rose-700 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>rose-700</span>
+                                    <span>#be123c</span>
+                                </div>
+                                <div class="bg-rose-800 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>rose-800</span>
+                                    <span>#9f1239</span>
+                                </div>
+                                <div class="bg-rose-900 h-20 flex flex-col items-center justify-center text-gray-100">
+                                    <span>rose-900</span>
+                                    <span>#881337</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end:: Rose Colors -->
                     </div>
                 </div>
                 <!-- end:Page content -->
             </div>
-            
-            <!-- start:: Basic Info Modal -->
-            <div 
-                x-show="basicInfoModal" 
-                x-transition.opacity
-                x-transition:enter.duration.100ms
-                x-transition:leave.duration.300ms
-                x-cloak
-                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
-            >
-                <div 
-                    @click.away="basicInfoModal = false" 
-                    class="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 bg-white p-10 rounded-lg shadow-xl"
-                >
-                    <span 
-                        @click="basicInfoModal = false"
-                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
-                        title="Close"
-                    >
-                        &#x2715
-                    </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
-                </div>
-            </div>
-            <!-- end:: Basic Info Modal -->
-
-            <!-- start:: Wide Info Modal -->
-            <div 
-                x-show="wideInfoModal" 
-                x-transition.opacity
-                x-transition:enter.duration.100ms
-                x-transition:leave.duration.300ms
-                x-cloak
-                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
-            >
-                <div 
-                    @click.away="wideInfoModal = false" 
-                    class="relative w-5/6 md:w-3/4 lg:w-2/3 xl:w-1/2 bg-white p-10 rounded-lg shadow-xl"
-                >
-                    <span 
-                        @click="wideInfoModal = false"
-                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
-                        title="Close"
-                    >
-                        &#x2715
-                    </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
-                </div>
-            </div>
-            <!-- end:: Wide Info Modal -->
-
-            <!-- start:: Ultra Wide Info Modal -->
-            <div 
-                x-show="ultraWideInfoModal" 
-                x-transition.opacity
-                x-transition:enter.duration.100ms
-                x-transition:leave.duration.300ms
-                x-cloak
-                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
-            >
-                <div 
-                    @click.away="ultraWideInfoModal = false" 
-                    class="relative w-11/12 md:w-5/6 lg:w-3/4 xl:w-2/3 bg-white p-10 rounded-lg shadow-xl"
-                >
-                    <span 
-                        @click="ultraWideInfoModal = false"
-                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
-                        title="Close"
-                    >
-                        &#x2715
-                    </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
-                </div>
-            </div>
-            <!-- end:: Ultra Wide Info Modal -->
         </div>
     </body>
 </html>
