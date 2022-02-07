@@ -1272,7 +1272,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1321,7 +1321,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1370,7 +1370,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1419,7 +1419,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1453,7 +1453,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="./../assets/img/profile.jpg"
+                                        src="./../../assets/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1565,295 +1565,182 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Form Layouts -->
-                    <div class="bg-white p-4 grid grid-cols-2 gap-8 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Horizontal Form Layout -->
+                    <div class="bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar mb-12">
+                        <!-- start::Basic Badges -->
                         <div>
-                            <h4 class="text-xl capitalize">Horizontal Form Layout</h4>
-                            <div class="mt-6">
-                                <form>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="first_name_horizontal">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_horizontal" 
-                                            id="first_name_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="last_name_horizontal">Last Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="last_name_horizontal" 
-                                            id="last_name_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your Last Name"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="email_horizontal">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_horizontal" 
-                                            id="email_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="address_horizontal">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_horizontal" 
-                                            id="address_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="password_horizontal">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 ml-4 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_horizontal" 
-                                                id="password_horizontal" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center my-4">
-                                        <input 
-                                        type="checkbox" 
-                                        name="terms_horizontal" 
-                                        id="terms_horizontal" 
-                                        class="ml-24 text-primary border border-primary focus:ring-0"
-                                        >
-                                        <label class="ml-2" for="terms_horizontal">
-                                            Accept <a href="#" class="underline">Terms Of Use</a>
-                                        </label>
-                                    </div>
-
-                                    <div class="flex gap-2 ml-24 mt-6">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
-
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </form>
+                            <h4 class="text-xl capitalize">Basic</h4>
+                            <div class="mt-2 space-y-10">
+                                <span class="bg-primary text-gray-100 px-2 py-1 text-sm">Primary</span>
+                                <span class="bg-secondary text-gray-100 px-2 py-1 text-sm">Secondary</span>
+                                <span class="bg-slate-500 text-gray-100 px-2 py-1 text-sm">Slate</span>
+                                <span class="bg-gray-500 text-gray-100 px-2 py-1 text-sm">Gray</span>
+                                <span class="bg-zinc-500 text-gray-100 px-2 py-1 text-sm">Zinc</span>
+                                <span class="bg-neutral-500 text-gray-100 px-2 py-1 text-sm">Neutral</span>
+                                <span class="bg-stone-500 text-gray-100 px-2 py-1 text-sm">Stone</span>
+                                <span class="bg-red-500 text-gray-100 px-2 py-1 text-sm">Red</span>
+                                <span class="bg-orange-500 text-gray-100 px-2 py-1 text-sm">Orange</span>
+                                <span class="bg-amber-500 text-gray-100 px-2 py-1 text-sm">Amber</span>
+                                <span class="bg-yellow-500 text-gray-100 px-2 py-1 text-sm">Yellow</span>
+                                <span class="bg-lime-500 text-gray-100 px-2 py-1 text-sm">Lime</span>
+                                <span class="bg-green-500 text-gray-100 px-2 py-1 text-sm">Green</span>
+                                <span class="bg-emerald-500 text-gray-100 px-2 py-1 text-sm">Emerald</span>
+                                <span class="bg-teal-500 text-gray-100 px-2 py-1 text-sm">Teal</span>
+                                <span class="bg-cyan-500 text-gray-100 px-2 py-1 text-sm">Cyan</span>
+                                <span class="bg-sky-500 text-gray-100 px-2 py-1 text-sm">Sky</span>
+                                <span class="bg-blue-500 text-gray-100 px-2 py-1 text-sm">Blue</span>
+                                <span class="bg-indigo-500 text-gray-100 px-2 py-1 text-sm">Indigo</span>
+                                <span class="bg-violet-500 text-gray-100 px-2 py-1 text-sm">Violet</span>
+                                <span class="bg-purple-500 text-gray-100 px-2 py-1 text-sm">Purple</span>
+                                <span class="bg-fuchsia-500 text-gray-100 px-2 py-1 text-sm">Fuchsia</span>
+                                <span class="bg-pink-500 text-gray-100 px-2 py-1 text-sm">Pink</span>
+                                <span class="bg-rose-500 text-gray-100 px-2 py-1 text-sm">Rose</span>
                             </div>
                         </div>
-                        <!-- end::Horizontal Form Layout -->
+                        <!-- end::Basic Badges -->
 
-                        <!-- start:: Vertical Form Layout -->
-                        <div>
-                            <h4 class="text-xl capitalize">Vertical Form Layout</h4>
-                            <div class="mt-6">
-                                <form>
-                                    <div class="flex flex-col my-4">
-                                        <label for="first_name_vertical">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_vertical" 
-                                            id="first_name_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="last_name_vertical">Last Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="last_name_vertical" 
-                                            id="last_name_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your Last Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="email_vertical">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_vertical" 
-                                            id="email_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="address_vertical">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_vertical" 
-                                            id="address_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_vertical">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_vertical" 
-                                                id="password_vertical" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center my-4">
-                                        <input 
-                                        type="checkbox" 
-                                        name="terms" 
-                                        id="terms" 
-                                        class="text-primary border border-primary focus:ring-0"
-                                        >
-                                        <label class="ml-2" for="terms">
-                                            Accept <a href="#" class="underline">Terms Of Use</a>
-                                        </label>
-                                    </div>
-
-                                    <div class="flex gap-2 mt-6">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
-
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </form>
+                        <!-- start::Rounded Badges -->
+                        <div class="mt-8">
+                            <h4 class="text-xl capitalize">Rounded</h4>
+                            <div class="mt-2 space-y-10">
+                                <span class="bg-primary text-gray-100 px-2 py-1 text-sm rounded">Primary</span>
+                                <span class="bg-secondary text-gray-100 px-2 py-1 text-sm rounded">Secondary</span>
+                                <span class="bg-slate-500 text-gray-100 px-2 py-1 text-sm rounded">Slate</span>
+                                <span class="bg-gray-500 text-gray-100 px-2 py-1 text-sm rounded">Gray</span>
+                                <span class="bg-zinc-500 text-gray-100 px-2 py-1 text-sm rounded">Zinc</span>
+                                <span class="bg-neutral-500 text-gray-100 px-2 py-1 text-sm rounded">Neutral</span>
+                                <span class="bg-stone-500 text-gray-100 px-2 py-1 text-sm rounded">Stone</span>
+                                <span class="bg-red-500 text-gray-100 px-2 py-1 text-sm rounded">Red</span>
+                                <span class="bg-orange-500 text-gray-100 px-2 py-1 text-sm rounded">Orange</span>
+                                <span class="bg-amber-500 text-gray-100 px-2 py-1 text-sm rounded">Amber</span>
+                                <span class="bg-yellow-500 text-gray-100 px-2 py-1 text-sm rounded">Yellow</span>
+                                <span class="bg-lime-500 text-gray-100 px-2 py-1 text-sm rounded">Lime</span>
+                                <span class="bg-green-500 text-gray-100 px-2 py-1 text-sm rounded">Green</span>
+                                <span class="bg-emerald-500 text-gray-100 px-2 py-1 text-sm rounded">Emerald</span>
+                                <span class="bg-teal-500 text-gray-100 px-2 py-1 text-sm rounded">Teal</span>
+                                <span class="bg-cyan-500 text-gray-100 px-2 py-1 text-sm rounded">Cyan</span>
+                                <span class="bg-sky-500 text-gray-100 px-2 py-1 text-sm rounded">Sky</span>
+                                <span class="bg-blue-500 text-gray-100 px-2 py-1 text-sm rounded">Blue</span>
+                                <span class="bg-indigo-500 text-gray-100 px-2 py-1 text-sm rounded">Indigo</span>
+                                <span class="bg-violet-500 text-gray-100 px-2 py-1 text-sm rounded">Violet</span>
+                                <span class="bg-purple-500 text-gray-100 px-2 py-1 text-sm rounded">Purple</span>
+                                <span class="bg-fuchsia-500 text-gray-100 px-2 py-1 text-sm rounded">Fuchsia</span>
+                                <span class="bg-pink-500 text-gray-100 px-2 py-1 text-sm rounded">Pink</span>
+                                <span class="bg-rose-500 text-gray-100 px-2 py-1 text-sm rounded">Rose</span>
                             </div>
                         </div>
-                    </div>
+                        <!-- end::Rounded Badges -->
 
-                    <div class="bg-white p-4 grid grid-cols-1 gap-8 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Multiple Columns -->
-                        <div>
-                            <h4 class="text-xl capitalize">Multiple Columns</h4>
-                            <form>
-                                <div class="grid grid-cols-2 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="first_name_multiple_columns">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_multiple_columns" 
-                                            id="first_name_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="email_multiple_columns">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_multiple_columns" 
-                                            id="email_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-3 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="address_multiple_columns">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_multiple_columns" 
-                                            id="address_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="city_multiple_columns">City</label>
-                                        <input 
-                                            type="text" 
-                                            name="city_multiple_columns" 
-                                            id="city_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="City"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="state_multiple_columns">State</label>
-                                        <input 
-                                            type="text" 
-                                            name="state_multiple_columns" 
-                                            id="state_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="State"
-                                        >
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-2 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_multiple_columns">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_multiple_columns" 
-                                                id="password_multiple_columns" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_confirmation_multiple_columns">Password Confirmation</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_confirmation_multiple_columns" 
-                                                id="password_confirmation_multiple_columns" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Confirm Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex gap-2">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
-
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
+                        <!-- start::Lighten Badges -->
+                        <div class="mt-8">
+                            <h4 class="text-xl capitalize">Lighten</h4>
+                            <div class="mt-2 space-y-10">
+                                <span class="bg-primary bg-opacity-30 text-primary px-2 py-1 text-sm rounded">Primary</span>
+                                <span class="bg-secondary bg-opacity-30 text-secondary px-2 py-1 text-sm rounded">Secondary</span>
+                                <span class="bg-slate-200 text-slate-600 px-2 py-1 text-sm rounded">Slate</span>
+                                <span class="bg-gray-200 text-gray-600 px-2 py-1 text-sm rounded">Gray</span>
+                                <span class="bg-zinc-200 text-zinc-600 px-2 py-1 text-sm rounded">Zinc</span>
+                                <span class="bg-neutral-200 text-neutral-600 px-2 py-1 text-sm rounded">Neutral</span>
+                                <span class="bg-stone-200 text-stone-600 px-2 py-1 text-sm rounded">Stone</span>
+                                <span class="bg-red-200 text-red-600 px-2 py-1 text-sm rounded">Red</span>
+                                <span class="bg-orange-200 text-orange-600 px-2 py-1 text-sm rounded">Orange</span>
+                                <span class="bg-amber-200 text-amber-600 px-2 py-1 text-sm rounded">Amber</span>
+                                <span class="bg-yellow-200 text-yellow-600 px-2 py-1 text-sm rounded">Yellow</span>
+                                <span class="bg-lime-200 text-lime-600 px-2 py-1 text-sm rounded">Lime</span>
+                                <span class="bg-green-200 text-green-600 px-2 py-1 text-sm rounded">Green</span>
+                                <span class="bg-emerald-200 text-emerald-600 px-2 py-1 text-sm rounded">Emerald</span>
+                                <span class="bg-teal-200 text-teal-600 px-2 py-1 text-sm rounded">Teal</span>
+                                <span class="bg-cyan-200 text-cyan-600 px-2 py-1 text-sm rounded">Cyan</span>
+                                <span class="bg-sky-200 text-sky-600 px-2 py-1 text-sm rounded">Sky</span>
+                                <span class="bg-blue-200 text-blue-600 px-2 py-1 text-sm rounded">Blue</span>
+                                <span class="bg-indigo-200 text-indigo-600 px-2 py-1 text-sm rounded">Indigo</span>
+                                <span class="bg-violet-200 text-violet-600 px-2 py-1 text-sm rounded">Violet</span>
+                                <span class="bg-purple-200 text-purple-600 px-2 py-1 text-sm rounded">Purple</span>
+                                <span class="bg-fuchsia-200 text-fuchsia-600 px-2 py-1 text-sm rounded">Fuchsia</span>
+                                <span class="bg-pink-200 text-pink-600 px-2 py-1 text-sm rounded">Pink</span>
+                                <span class="bg-rose-200 text-rose-600 px-2 py-1 text-sm rounded">Rose</span>
+                            </div>
                         </div>
+                        <!-- end::Lighten Badges -->
+
+                        <!-- start::Outline Badges -->
+                        <div class="mt-8">
+                            <h4 class="text-xl capitalize">Outline</h4>
+                            <div class="mt-2 space-y-10">
+                                <span class="text-primary ring-1 ring-primary px-2 py-1 text-sm rounded">Primary</span>
+                                <span class="text-secondary ring-1 ring-secondary px-2 py-1 text-sm rounded">Secondary</span>
+                                <span class="text-slate-500 ring-1 ring-slate-500 px-2 py-1 text-sm rounded">Slate</span>
+                                <span class="text-gray-500 ring-1 ring-gray-500 px-2 py-1 text-sm rounded">Gray</span>
+                                <span class="text-zinc-500 ring-1 ring-zinc-500 px-2 py-1 text-sm rounded">Zinc</span>
+                                <span class="text-neutral-500 ring-1 ring-neutral-500 px-2 py-1 text-sm rounded">Neutral</span>
+                                <span class="text-stone-500 ring-1 ring-stone-500 px-2 py-1 text-sm rounded">Stone</span>
+                                <span class="text-red-500 ring-1 ring-red-500 px-2 py-1 text-sm rounded">Red</span>
+                                <span class="text-orange-500 ring-1 ring-orange-500 px-2 py-1 text-sm rounded">Orange</span>
+                                <span class="text-amber-500 ring-1 ring-amber-500 px-2 py-1 text-sm rounded">Amber</span>
+                                <span class="text-yellow-500 ring-1 ring-yellow-500 px-2 py-1 text-sm rounded">Yellow</span>
+                                <span class="text-lime-500 ring-1 ring-lime-500 px-2 py-1 text-sm rounded">Lime</span>
+                                <span class="text-green-500 ring-1 ring-green-500 px-2 py-1 text-sm rounded">Green</span>
+                                <span class="text-emerald-500 ring-1 ring-emerald-500 px-2 py-1 text-sm rounded">Emerald</span>
+                                <span class="text-teal-500 ring-1 ring-teal-500 px-2 py-1 text-sm rounded">Teal</span>
+                                <span class="text-cyan-500 ring-1 ring-cyan-500 px-2 py-1 text-sm rounded">Cyan</span>
+                                <span class="text-sky-500 ring-1 ring-sky-500 px-2 py-1 text-sm rounded">Sky</span>
+                                <span class="text-blue-500 ring-1 ring-blue-500 px-2 py-1 text-sm rounded">Blue</span>
+                                <span class="text-indigo-500 ring-1 ring-indigo-500 px-2 py-1 text-sm rounded">Indigo</span>
+                                <span class="text-violet-500 ring-1 ring-violet-500 px-2 py-1 text-sm rounded">Violet</span>
+                                <span class="text-purple-500 ring-1 ring-purple-500 px-2 py-1 text-sm rounded">Purple</span>
+                                <span class="text-fuchsia-500 ring-1 ring-fuchsia-500 px-2 py-1 text-sm rounded">Fuchsia</span>
+                                <span class="text-pink-500 ring-1 ring-pink-500 px-2 py-1 text-sm rounded">Pink</span>
+                                <span class="text-rose-500 ring-1 ring-rose-500 px-2 py-1 text-sm rounded">Rose</span>
+                            </div>
+                        </div>
+                        <!-- end::Outline Badges -->
+
+                        <!-- start::Gradients Badges -->
+                        <div class="mt-8">
+                            <h4 class="text-xl capitalize">Gradients</h4>
+                            <div class="mt-2 space-y-10">
+                                <span class="bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 text-gray-100 px-2 py-1 text-sm rounded">Red - Orange - Amber</span>
+                                <span class="bg-gradient-to-r from-lime-500 via-green-500 to-emerald-500 text-gray-100 px-2 py-1 text-sm rounded">Lime - Green - Emerald</span>
+                                <span class="bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500 text-gray-100 px-2 py-1 text-sm rounded">Sky - Blue - Indigo</span>
+                                <span class="bg-gradient-to-r from-indigo-500 via-violet-500 to-purple-500 text-gray-100 px-2 py-1 text-sm rounded">Indigo - Violet - Purple</span>
+                                <span class="bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-500 text-gray-100 px-2 py-1 text-sm rounded">Fuchsia - Pink - Rose</span>
+                                <span class="bg-gradient-to-r from-red-500 via-amber-500 to-lime-500 text-gray-100 px-2 py-1 text-sm rounded">Red - Amber - Lime</span>
+                                <span class="bg-gradient-to-r from-lime-500 via-emerald-500 to-cyan-500 text-gray-100 px-2 py-1 text-sm rounded">Lime - Emerald - Cyan</span>
+                                <span class="bg-gradient-to-r from-teal-500 via-sky-500 to-indigo-500 text-gray-100 px-2 py-1 text-sm rounded">Teal - Sky - Indigo</span>
+                                <span class="bg-gradient-to-r from-violet-500 via-fuchsia-500 to-rose-500 text-gray-100 px-2 py-1 text-sm rounded">Violet - Fuchsia - Rose</span>
+                            </div>
+                        </div>
+                        <!-- end::Gradients Badges -->
+
+                        <!-- start::Contextual Badges -->
+                        <div class="mt-8">
+                            <h4 class="text-xl capitalize">Contextual</h4>
+                            <div class="mt-2 space-y-10">
+                                <span class="bg-primary bg-opacity-20 text-primary px-2 py-1 text-sm rounded">Primary</span>
+                                <span class="bg-secondary bg-opacity-20 text-secondary px-2 py-1 text-sm rounded">Secondary</span>
+                                <span class="bg-blue-200 text-blue-600 px-2 py-1 text-sm rounded">Info</span>
+                                <span class="bg-green-200 text-green-600 px-2 py-1 text-sm rounded">Success</span>
+                                <span class="bg-red-200 text-red-600 px-2 py-1 text-sm rounded">Danger</span>
+                                <span class="bg-yellow-200 text-yellow-600 px-2 py-1 text-sm rounded">Warning</span>
+                                <span class="bg-gray-200 text-gray-600 px-2 py-1 text-sm rounded">Light</span>
+                                <span class="bg-gray-800 text-gray-100 px-2 py-1 text-sm rounded">Dark</span>
+                            </div>
+                        </div>
+                        <!-- end::Contextual Badges -->
+
+                        <!-- start::Sizes Badges -->
+                        <div class="mt-8">
+                            <h4 class="text-xl capitalize">Sizes</h4>
+                            <div class="mt-2 space-y-10">
+                                <span class="bg-primary text-gray-100 px-2 py-1 text-xs rounded">xs</span>
+                                <span class="bg-primary text-gray-100 px-2 py-1 text-sm rounded">sm</span>
+                                <span class="bg-primary text-gray-100 px-2 py-1 rounded">base</span>
+                                <span class="bg-primary text-gray-100 px-2 py-1 text-lg rounded">lg</span>
+                                <span class="bg-primary text-gray-100 px-2 py-1 text-xl rounded">xl</span>
+                                <span class="bg-primary text-gray-100 px-2 py-1 text-2xl rounded">2xl</span>
+                            </div>
+                        </div>
+                        <!-- end::Sizes Badges -->
                     </div>
-                    <!-- start::Form Layouts -->
                 </div>
                 <!-- end:Page content -->
             </div>

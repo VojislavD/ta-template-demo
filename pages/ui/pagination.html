@@ -1272,7 +1272,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1321,7 +1321,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1370,7 +1370,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1419,7 +1419,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1453,7 +1453,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="./../assets/img/profile.jpg"
+                                        src="./../../assets/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1565,295 +1565,395 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Form Layouts -->
-                    <div class="bg-white p-4 grid grid-cols-2 gap-8 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Horizontal Form Layout -->
-                        <div>
-                            <h4 class="text-xl capitalize">Horizontal Form Layout</h4>
-                            <div class="mt-6">
-                                <form>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="first_name_horizontal">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_horizontal" 
-                                            id="first_name_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="last_name_horizontal">Last Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="last_name_horizontal" 
-                                            id="last_name_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your Last Name"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="email_horizontal">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_horizontal" 
-                                            id="email_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="address_horizontal">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_horizontal" 
-                                            id="address_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="password_horizontal">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 ml-4 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_horizontal" 
-                                                id="password_horizontal" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center my-4">
-                                        <input 
-                                        type="checkbox" 
-                                        name="terms_horizontal" 
-                                        id="terms_horizontal" 
-                                        class="ml-24 text-primary border border-primary focus:ring-0"
-                                        >
-                                        <label class="ml-2" for="terms_horizontal">
-                                            Accept <a href="#" class="underline">Terms Of Use</a>
-                                        </label>
-                                    </div>
-
-                                    <div class="flex gap-2 ml-24 mt-6">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
-
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </form>
+                    <div class="bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar mb-12">
+                        <!-- start::Basic -->
+                        <div class="py-2">
+                            <h4 class="text-xl capitalize">Basic</h4>
+                            <div class="flex items-center space-x-4 mt-4">
+                                <button class="text-gray-400" disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button class="bg-primary hover:bg-primary-dark text-gray-100 text-lg px-3 py-0.5 rounded-full">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-900 hover:text-gray-600 text-lg px-3 py-0.5 rounded-full">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-900 hover:text-gray-600 text-lg px-3 py-0.5 rounded-full">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 hover:text-gray-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <!-- end::Horizontal Form Layout -->
+                        <!-- end::Basic -->
 
-                        <!-- start:: Vertical Form Layout -->
-                        <div>
-                            <h4 class="text-xl capitalize">Vertical Form Layout</h4>
-                            <div class="mt-6">
-                                <form>
-                                    <div class="flex flex-col my-4">
-                                        <label for="first_name_vertical">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_vertical" 
-                                            id="first_name_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="last_name_vertical">Last Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="last_name_vertical" 
-                                            id="last_name_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your Last Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="email_vertical">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_vertical" 
-                                            id="email_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="address_vertical">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_vertical" 
-                                            id="address_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_vertical">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_vertical" 
-                                                id="password_vertical" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center my-4">
-                                        <input 
-                                        type="checkbox" 
-                                        name="terms" 
-                                        id="terms" 
-                                        class="text-primary border border-primary focus:ring-0"
-                                        >
-                                        <label class="ml-2" for="terms">
-                                            Accept <a href="#" class="underline">Terms Of Use</a>
-                                        </label>
-                                    </div>
-
-                                    <div class="flex gap-2 mt-6">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
-
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </form>
+                        <!-- start::Border -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Border</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="text-gray-400 hover:bg-gray-200 p-2 border border-gray-300" disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 hover:bg-gray-200 p-2 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                    </div>
+                        <!-- end::Border -->
 
-                    <div class="bg-white p-4 grid grid-cols-1 gap-8 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Multiple Columns -->
-                        <div>
-                            <h4 class="text-xl capitalize">Multiple Columns</h4>
-                            <form>
-                                <div class="grid grid-cols-2 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="first_name_multiple_columns">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_multiple_columns" 
-                                            id="first_name_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="email_multiple_columns">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_multiple_columns" 
-                                            id="email_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-3 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="address_multiple_columns">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_multiple_columns" 
-                                            id="address_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="city_multiple_columns">City</label>
-                                        <input 
-                                            type="text" 
-                                            name="city_multiple_columns" 
-                                            id="city_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="City"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="state_multiple_columns">State</label>
-                                        <input 
-                                            type="text" 
-                                            name="state_multiple_columns" 
-                                            id="state_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="State"
-                                        >
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-2 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_multiple_columns">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_multiple_columns" 
-                                                id="password_multiple_columns" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_confirmation_multiple_columns">Password Confirmation</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_confirmation_multiple_columns" 
-                                                id="password_confirmation_multiple_columns" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Confirm Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex gap-2">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
-
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
+                        <!-- start::Rounded -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Rounded</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="text-gray-400 hover:bg-gray-200 p-2 border border-gray-300 rounded-l-lg " disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 hover:bg-gray-200 p-2 border border-gray-300 rounded-r-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
+                        <!-- end::Rounded -->
+
+                        <!-- start::Text -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Text</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                    <span>Previous</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::Text -->
+
+                        <!-- start::Prev & Next -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Prev & Next</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Prev</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::Prev & Next -->
+
+                        <!-- start::First & Last Page -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">First & Last Page</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300 mr-3">
+                                    <span>First</span>
+                                </button>
+
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Prev</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>4</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>5</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>6</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>7</span>
+                                </button>
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300 ml-3">
+                                    <span>Last</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::First & Last Page -->
+
+                        <!-- start::First & Last Page With Number -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">First & Last Page With Number</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Prev</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>1</span>
+                                </button>
+                                <span class="mx-2">...</span>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>4</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>5</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>6</span>
+                                </button>
+                                <span class="mx-2">...</span>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>10</span>
+                                </button>
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::First & Last Page With Number -->
+
+                        <!-- start::Total Results Info -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Total Results Info</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Prev</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2 ml-1">
+                                <span>Showing 10 to 20 of 50 results</span>
+                            </div>
+                        </div>
+                        <!-- end::Total Results Info -->
+
+                        <!-- start::Size -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Size</h4>
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center mt-4">
+                                    <button class="text-gray-400 text-sm hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                        <span>Previous</span>
+                                    </button>
+                                    <button class="text-gray-100 text-sm bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                        <span>1</span>
+                                    </button>
+                                    <button class="text-gray-600 text-sm hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>2</span>
+                                    </button>
+                                    <button class="text-gray-600 text-sm hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>3</span>
+                                    </button>
+                                    <button class="text-gray-900 text-sm hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>Next</span>
+                                    </button>
+                                </div>
+
+                                <div class="flex items-center mt-4">
+                                    <button class="text-gray-400  hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                        <span>Previous</span>
+                                    </button>
+                                    <button class="text-gray-100 bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                        <span>1</span>
+                                    </button>
+                                    <button class="text-gray-600 hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>2</span>
+                                    </button>
+                                    <button class="text-gray-600 hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>3</span>
+                                    </button>
+                                    <button class="text-gray-900 hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>Next</span>
+                                    </button>
+                                </div>
+
+                                <div class="flex items-center mt-4">
+                                    <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                        <span>Previous</span>
+                                    </button>
+                                    <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                        <span>1</span>
+                                    </button>
+                                    <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>2</span>
+                                    </button>
+                                    <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>3</span>
+                                    </button>
+                                    <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>Next</span>
+                                    </button>
+                                </div>
+
+                                <div class="flex items-center mt-4">
+                                    <button class="text-gray-400 text-xl hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                        <span>Previous</span>
+                                    </button>
+                                    <button class="text-gray-100 text-xl bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                        <span>1</span>
+                                    </button>
+                                    <button class="text-gray-600 text-xl hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>2</span>
+                                    </button>
+                                    <button class="text-gray-600 text-xl hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>3</span>
+                                    </button>
+                                    <button class="text-gray-900 text-xl hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end::Size -->
+
+                        <!-- start::Align -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Align</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                    <span>Previous</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+
+                            <div class="flex items-center justify-center mt-4">
+                                <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                    <span>Previous</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+
+                            <div class="flex items-center justify-end mt-4">
+                                <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                    <span>Previous</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::Align -->
+                        
+
                     </div>
-                    <!-- start::Form Layouts -->
                 </div>
                 <!-- end:Page content -->
             </div>
